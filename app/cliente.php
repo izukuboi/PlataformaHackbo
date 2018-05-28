@@ -9,6 +9,7 @@ class cliente extends Model
 {
 	//use SoftDeletes;
 	//comentario prueba
+	//jelou my niggers
 	protected $table='cliente';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idCliente';
