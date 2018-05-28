@@ -34,4 +34,6 @@ class cliente extends Model
 	public function detreceta(){
 		return $this->hasOne('App\DetalleReceta','IdProducto');
 	} */
+
+	//aacecececece
 }
