@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class cliente extends Model
 {
-    //use SoftDeletes;
+	//use SoftDeletes;
+	//comentario prueba
 	protected $table='cliente';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idCliente';
