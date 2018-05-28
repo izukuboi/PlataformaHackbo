@@ -7,13 +7,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class cliente extends Model
 {
-    //use SoftDeletes;
+	//use SoftDeletes;
+	//comentario prueba
+	//jelou my niggers
 	protected $table='cliente';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idCliente';
     public $timestamps = false;
 			
-
+	
 	/* public function unidadmedida(){
 		return $this->belongsTo('App\Unidadmedida','IdUnidadmedida');
 	}		
@@ -33,4 +35,6 @@ class cliente extends Model
 	public function detreceta(){
 		return $this->hasOne('App\DetalleReceta','IdProducto');
 	} */
+
+	//aacecececece
 }
