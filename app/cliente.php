@@ -14,7 +14,7 @@ class cliente extends Model
     protected $primarykey='idCliente';
     public $timestamps = false;
 			
-	//Comentario!!! ahg...
+	
 	/* public function unidadmedida(){
 		return $this->belongsTo('App\Unidadmedida','IdUnidadmedida');
 	}		
