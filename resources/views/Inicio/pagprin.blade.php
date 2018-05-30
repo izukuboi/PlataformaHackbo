@@ -166,15 +166,20 @@
      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
        <h2 class="w3-wide w3-center">Top Proyectos</h2>
        	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+				@foreach($proyecto as $p)
          	<div class="w3-third w3-margin-bottom">
            <img src="{{asset('img/psd-1.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
            <div class="w3-container w3-white">
-             <p><b>Proyecto 1</b></p>
-             <p class="w3-opacity">Fecha</p>
-             <p>Descripcion</p>
-             <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
+			 <p><b>{{$p -> nombre }}</b></p>
+			 	
+			 <p class="w3-opacity">{{$p -> fechaFinal }}</p>
+			 
+			 <p>{{$p -> descripcion }}</p>
+			 
+              <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
            </div>
-         </div>
+				 </div>
+				 {{--
          <div class="w3-third w3-margin-bottom">
            <img src="{{asset('img/psd-1.jpg')}}" alt="Paris" style="width:100%" class="w3-hover-opacity">
            <div class="w3-container w3-white">
@@ -191,7 +196,9 @@
              <p class="w3-opacity">Fecha</p>
              <p>Descripcion</p>
              <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
-           </div>
+		   </div> --}}
+				
+		   @endforeach
          </div>
        </div>
      </div>
