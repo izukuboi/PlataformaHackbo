@@ -4,10 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8">
 	<title>Regístrate</title>
-	<link rel="stylesheet" href="boton.css">
+	<link rel="stylesheet" href="{{ asset('css/boton.css') }}">
 </head>
 <body>
-	<form action="" class = "form-register">
+	<form action="{{ action('PatrocinadorController@store') }}"  class = "form-register" method="post">
+		{{csrf_field()}}
+		
 		<h2>REGISTRATE COMO PATROCINADOR</h2>
 
 	<div class= "contenedor-inputs"
@@ -19,14 +21,12 @@
 
 		<p>Pais:</p>	
 		<select name= "Pais" class = "combobox" required>
-			<option value= "None">Seleccione pais</option>
-			<option value= "Bolivia">Bolivia</option>
-			<option value= "Argentina">Argentina</option>
-			<option value= "Brasil">Brasil</option>
-
+			@foreach($pais as $p)
+                <option value="{{$p->idPais}}">{{$p->nombrePais}}</option>
+            @endforeach
 		</select>
 		<p>Empresa:</p>
-		<input type="text" class="field" name= "Empresa" required> <br/>
+		<input type="text" class="field" name= "Empresa"> <br/>
 
 		<p>Email:</p>
 		<input type="email" class="field" name="Email" required> <br/>
@@ -41,7 +41,6 @@
 			<input type="submit" class="btn btn-green" name= "boton_registrar" value="Registrar">
 		</p>
 	</div>
-
 	</form>
 </body>
 </html>
