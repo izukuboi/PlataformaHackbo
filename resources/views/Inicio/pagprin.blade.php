@@ -12,7 +12,8 @@
     <link rel="icon" type="image/png" href="img/small-logo-01.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href='stylepagprin.css' rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/stylepagprin.css')}}" rel='stylesheet' type='text/css'>
+	
 
 </head>
 
@@ -56,14 +57,15 @@
             <a href="#"><div class="oldies object">Oldies</div></a>
                 <div id="fleche-nav-3"></div>
     		</div>
+			<!--- "{{asset('img/icon-premium.svg')}}"-->
             </div>
             <div id="wrapper-bouton-icon">
-            	<div id="bouton-ai"><img src="img/icon-ai.svg" alt="illustrator" title="Illustrator" height="28" width="28"></div>
-            	<div id="bouton-psd"><img src="img/icon-psd.svg" alt="photoshop" title="Photoshop" height="28" width="28"></div>
-            	<div id="bouton-theme"><img src="img/icon-themes.svg" alt="theme" title="Theme" height="28" width="28"></div>
-            	<div id="bouton-font"><img src="img/icon-font.svg" alt="font" title="Font" height="28" width="28"></div>
-            	<div id="bouton-photo"><img src="img/icon-photo.svg" alt="photo" title="Photo" height="28" width="28"></div>
-            	<div id="bouton-premium"><img src="img/icon-premium.svg" alt="premium" title="Premium" height="28" width="28"></div>
+            	<div id="bouton-ai"><img src="{{asset('img/icon-ai.svg')}}" alt="illustrator" title="Illustrator" height="28" width="28"></div>
+            	<div id="bouton-psd"><img src="{{asset('img/icon-psd.svg')}}" alt="photoshop" title="Photoshop" height="28" width="28"></div>
+            	<div id="bouton-theme"><img src="{{asset('img/icon-themes.svg')}}" alt="theme" title="Theme" height="28" width="28"></div>
+            	<div id="bouton-font"><img src="{{asset('img/icon-font.svg')}}" alt="font" title="Font" height="28" width="28"></div>
+            	<div id="bouton-photo"><img src="{{asset('img/icon-photo.svg')}}" alt="photo" title="Photo" height="28" width="28"></div>
+            	<div id="bouton-premium"><img src="{{asset('img/icon-premium.svg')}}" alt="premium" title="Premium" height="28" width="28"></div>
 			</div>
     	</div>
     </div>
@@ -125,11 +127,12 @@
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
             <!--<h2 class="w3-center">Mejores Proyectos</h2>-->
+			<!--- "{{asset('img/psd-3.jpg')}}"-->
 
             <div class="w3-content w3-section" style="max-width:1000px">
-              <img class="mySlides" src="img/psd-1.jpg" style="width:100%">
-              <img class="mySlides" src="img/psd-4.jpg" style="width:100%">
-              <img class="mySlides" src="img/psd-3.jpg" style="width:100%">
+              <img class="mySlides" src="{{asset('img/psd-1.jpg')}}" style="width:100%">
+              <img class="mySlides" src="{{asset('img/psd-4.jpg')}}" style="width:100%">
+              <img class="mySlides" src="{{asset('img/psd-3.jpg')}}" style="width:100%">
             </div>
 
             <script>
@@ -158,12 +161,13 @@
 
  </div>
  <!-- The Tour Section -->
+ <!--- "{{asset('img/psd-1.jpg')}}"-->
    <div class="w3-blue" id="tour">
      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
        <h2 class="w3-wide w3-center">Top Proyectos</h2>
        	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
          	<div class="w3-third w3-margin-bottom">
-           <img src="img/psd-1.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+           <img src="{{asset('img/psd-1.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
            <div class="w3-container w3-white">
              <p><b>Proyecto 1</b></p>
              <p class="w3-opacity">Fecha</p>
@@ -172,7 +176,7 @@
            </div>
          </div>
          <div class="w3-third w3-margin-bottom">
-           <img src="img/psd-1.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+           <img src="{{asset('img/psd-1.jpg')}}" alt="Paris" style="width:100%" class="w3-hover-opacity">
            <div class="w3-container w3-white">
              <p><b>Proyecto 2</b></p>
              <p class="w3-opacity">Fecha</p>
@@ -181,7 +185,7 @@
            </div>
          </div>
          <div class="w3-third w3-margin-bottom">
-           <img src="img/psd-1.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+           <img src="{{asset('img/psd-1.jpg')}}" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
            <div class="w3-container w3-white">
              <p><b>Proyecto 3</b></p>
              <p class="w3-opacity">Fecha</p>
@@ -263,15 +267,15 @@
 
 
 <!-- SCRIPT -->
-
+<!-- "{{asset('js/main.js')}}"-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
-	<script type="text/javascript" src="js/fastclick.min.js"></script>
-	<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
-	<script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.scrollTo.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.localScroll.min.js')}}"></script>
+    <script type="text/javascript" src= "{{asset('js/jquery-animate-css-rotate-scale.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/fastclick.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/jquery.animate-colors-min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/jquery.animate-shadow-min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 	<script>
 
 
@@ -302,27 +306,27 @@ function preloader() {
 		var img18 = new Image();
 		var img19 = new Image();
 		var img20 = new Image();
-
-		img1.src = "img/psd-4.jpg";
-		img2.src = "img/font-1.jpg";
-		img3.src = "img/psd-1.jpg";
-		img4.src = "img/psd-2.jpg";
-		img5.src = "img/ai-1.jpg";
-		img6.src = "img/theme-2.jpg";
-		img7.src = "img/psd-3.jpg";
-		img8.src = "img/font-2.jpg";
-		img9.src = "img/font-3.jpg";
-		img10.src = "img/ai-2.jpg";
-		img11.src = "img/icons-1.jpg";
-		img12.src = "img/ui-1.jpg";
-		img13.src = "img/font-5.jpg";
-		img14.src = "img/theme-2.jpg";
-		img15.src = "img/psd-5.jpg";
-		img16.src = "img/icons-3.jpg";
-		img17.src = "img/font-4.jpg";
-		img18.src = "img/theme-3.jpg";
-		img19.src = "img/font-6.jpg";
-		img20.src = "img/theme-4.jpg";
+		//"{{asset('img/theme-4.jpg')}}"-->
+		img1.src = "{{asset('img/psd-4.jpg')}}";
+		img2.src = "{{asset('img/font-1.jpg')}}";
+		img3.src = "{{asset('img/psd-1.jpg')}}";
+		img4.src = "{{asset('img/psd-2.jpg')}}";
+		img5.src = "{{asset('img/ai-1.jpg')}}";
+		img6.src = "{{asset('img/theme-2.jpg')}}";
+		img7.src = "{{asset('img/psd-3.jpg')}}";
+		img8.src = "{{asset('img/font-2.jpg')}}";
+		img9.src = "{{asset('img/font-3.jpg')}}";
+		img10.src = "{{asset('img/ai-2.jpg')}}";
+		img11.src = "{{asset('img/icons-1.jpg')}}";
+		img12.src = "{{asset('img/ui-1.jpg')}}";
+		img13.src = "{{asset('img/font-5.jpg')}}";
+		img14.src = "{{asset('img/theme-2.jpg')}}";
+		img15.src = "{{asset('img/psd-5.jpg')}}";
+		img16.src = "{{asset('img/icons-3.jpg')}}";
+		img17.src = "{{asset('img/font-4.jpg')}}";
+		img18.src = "{{asset('img/theme-3.jpg')}}";
+		img19.src = "{{asset('img/font-6.jpg')}}";
+		img20.src = "{{asset('img/theme-4.jpg')}}";
 	}
 }
 function addLoadEvent(func) {
