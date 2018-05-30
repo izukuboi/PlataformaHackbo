@@ -27,12 +27,17 @@
 
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-		<!--<div class="logo"><img src="img/logo-burst.png" alt="logo platz" height="60" width="90"></div>
-        <div id="main_tip_search">
-			<form>
-				<input type="text" name="search" id="tip_search_input" list="search" autocomplete=off required>
-			</form>-->
-		</div>
+		 <div id="wrapper-title-2">
+            <a href="#"><div class="recent object">Sobre Nosotros</div></a>
+        </div>
+        <div id="wrapper-title-2">
+            <a href="#"><div class="recent object">Como Funcionamos</div></a>
+        </div>
+        <div id="wrapper-title-2">
+            <a href="#"><div class="recent object">Contactanos</div></a>
+        </div>
+		<!--<div class="logo"><img src="img/logo-burst.png" alt="logo platz" height="60" width="90"></div>-->
+	</div>
         <div id="stripes"></div>
     </div>
 </div>
@@ -42,20 +47,21 @@
 <div id="wrapper-navbar">
 		<div class="navbar object navbar-info">
     		<div id="wrapper-sorting">
-            <div id="wrapper-title-1">
-            <div class="top-rated object">Registrate</div>
-            	<div id="fleche-nav-1"></div>
-    		</div>
-
+           <div id="wrapper-title-1">
+            <div class="top-rated object">Busca Proyectos</div>
+            </div>
+            
             <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Sobre Nosotros</div></a>
-                <div id="fleche-nav-2"></div>
-    		</div>
+            <a href="#"><div class="recent object">Registrate</div></a>
+            </div>
+            
+            <div id="wrapper-title-3">
+            <a href="#"><div class="oldies object">Ingresa</div></a>
+            </div>
 
             <div id="wrapper-title-3">
-            <a href="#"><div class="oldies object">Oldies</div></a>
-                <div id="fleche-nav-3"></div>
-    		</div>
+            <a href="#"><div class="oldies object">Publica un Proyecto</div></a>
+            </div>
             </div>
             <div id="wrapper-bouton-icon">
             	<div id="bouton-ai"><img src="img/icon-ai.svg" alt="illustrator" title="Illustrator" height="28" width="28"></div>
