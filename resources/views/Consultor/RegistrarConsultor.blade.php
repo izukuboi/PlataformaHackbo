@@ -4,10 +4,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8">
 	<title>Regístrate</title>
-	<link rel="stylesheet" href="boton.css">
+	<link rel="stylesheet" href="{{ asset('css/boton.css') }}">
 </head>
 <body>
-	<form action="" class = "form-register">
+	<form action="{{ action('ConsultorController@store') }}"  class = "form-register" method="post">
+		{{csrf_field()}}
 		<h2>REGISTRATE COMO CONSULTOR</h2>
 
 	<div class= "contenedor-inputs"
@@ -19,19 +20,17 @@
 
 		<p>Pais:</p>	
 		<select name= "Pais" class = "combobox" required>
-			<option value= "None">Seleccione pais</option>
-			<option value= "Bolivia">Bolivia</option>
-			<option value= "Argentina">Argentina</option>
-			<option value= "Brasil">Brasil</option>
-
+			@foreach($pais as $p)
+                <option value="{{$p->idPais}}">{{$p->nombrePais}}</option>
+            @endforeach
 		</select>
 
 		<p>Especialidad:</p>	
 		<select name= "Especialidad" class = "combobox" required>
-			<option value= "None">Seleccione especialidad</option>
-			<option value= "Front-End">Front-End</option>
-			<option value= "Back-End">Back-End</option>
-			<option value= "Movil">Movil</option>
+			@foreach($especialidad as $p)
+                <option value="{{$p->idEspecialidad}}">{{$p->nombreEspecialidad}}</option>
+            @endforeach
+		</select>
 
 		</select>
 
@@ -43,10 +42,10 @@
 
 		<p>Contraseña:</p>
 		<input type="password" class="field" name= "Password" required> <br/>
-		<p>Tiempo:</p>
-		<input type="text" class="field" name= "Tiempo" required> <br/>
 		<p>Tarifa:</p>
-		<input type="text" class="field" name= "Tarifa" required> <br/>
+		<input type="text" class="field" name= "TarifaConsultoria" required> <br/>
+		<p>Descripcion:</p>
+		<input type="text" class="field" name= "Descripcion" required> <br/>
 
 		<p class="center-content">
 			<input type="submit" class="btn btn-green" name= "boton_registrar" value="Registrar">

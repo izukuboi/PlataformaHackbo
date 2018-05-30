@@ -14,6 +14,7 @@
 Route::resource('cliente','ClienteController');
 Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
+Route::resource('consultor', 'ConsultorController');
 
 Route::get('/', function () {
     return view('Inicio/pagprin');
