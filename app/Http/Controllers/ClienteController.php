@@ -32,7 +32,7 @@ class ClienteController extends Controller
     public function create()
     {
         $pais = pais::all();
-        return view('Cliente/CrearCliente',compact('pais'));
+        return view('Cliente/RegistrarCliente',compact('pais'));
     }
 
     /**
@@ -71,7 +71,7 @@ class ClienteController extends Controller
         $userp->idPerfil = $perfilCli->idPerfil;
         $userp->save();
 
-        return 'Cliente '.$request->nombre.' registrado';
+        return redirect()->action('ClienteController@create');
 
     }
 

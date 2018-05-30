@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Regístrate</title>
 	<link rel="stylesheet" href="boton.css">
+	<link rel="stylesheet" href="{{ asset('css/boton.css') }}">
 </head>
 <body>
 	<form action="" class = "form-register">
@@ -19,10 +20,10 @@
 
 		<p>Pais:</p>	
 		<select name= "Pais" class = "combobox" required>
-			<option value= "None">Seleccione pais</option>
-			<option value= "Bolivia">Bolivia</option>
-			<option value= "Argentina">Argentina</option>
-			<option value= "Brasil">Brasil</option>
+			<option value="0" selected>Elegir..</option>
+			@foreach($pais as $p)
+				<option value="{{$p->idPais}}">{{$p->nombrePais}}</option>
+			@endforeach
 
 		</select>
 
