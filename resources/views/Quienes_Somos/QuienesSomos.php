@@ -135,8 +135,8 @@
 			<!--- "{{asset('img/psd-3.jpg')}}"-->
 	<div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
 	   <h2 class="w3-wide">Que Hacemos</h2>
-	   <p class="w3-justify">Como bolivia va creciendo y desrallandose muchos estudiantes, catedraticos, universitarios, trabajadores, etc..
-        Ocurre algo curioso, la gente se ah dado cuenta que se nesecita generar nuevas ideas para mantener vivo al mundo en el que estamos y por tanto una cresca como ser humano.
+	   <p class="w3-justify">Como Bolivia va creciendo y desarrollandose muchos estudiantes, catedraticos, universitarios, trabajadores, etc..
+        Ocurre algo curioso, la gente se ha dado cuenta que se necesita generar nuevas ideas para mantener vivo al mundo en el que estamos y por tanto una cresca como ser humano.
         Puede que suene bonito todo esto, pero existe un pequeño problema que vamos hacer con tantas ideas, algunas de las ideas pueden llegar hacerte millonario, otras llevarte a un buen trabajo, otras ideas quizas no sean tan buenas pero es por que nadie te ah escuchado o quizas solo neseceties un poco de ayuda para mejorar tu idea que tienes en mente y haci lograr una meta en la vida que es ser exitoso en ella. 
         </p>
     </div>
@@ -167,35 +167,37 @@
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
        <div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
        <h2 class="w3-wide">Sobre Nosotros</h2>
-       <p class="w3-justify">Inserta algo aqui marco :/ 
+       <p class="w3-center">Somos un grupo de jóvenes desarroladores con ganas de cambiar el mundo.
+        </p>
+        <p class="w3-center">Muy cliché? Totalmente. Cierto? También.
         </p>
     </div>   
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
-          <img src="{{asset('img/themoneitor.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="img/themoneitor.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>Richi</b></p>
-            <p class="w3-opacity">"Disque Ingeniero de Sistemas"</p>
-            <p>Estudiante de la Upsa:/</p>
+            <p><b>Ricardo "Richi" Cuellar</b></p>
+            <p class="w3-opacity">"Todos me tiran un saving throw de percepción"</p>
+            <p>Web development Extraordinary</p>
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Contacto</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="{{asset('img/themoneitor.jpg')}}" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <img src="img/marconi.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>Marco</b></p>
-            <p class="w3-opacity">A</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <p><b>Marco "The Last Airbender" Siñaniz </b></p>
+            <p class="w3-opacity">"Vos tranquilo yo nervioso"</p>
+            <p>Cooking Tutorials binge-watcher</p>
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Contacto</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="{{asset('img/themoneitor.jpg')}}" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <img src="img/izuku.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <p><b>Isaac "Deku" Rodriguez </b></p>
+            <p class="w3-opacity">"omegalul"</p>
+            <p>Just below average Human</p>
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Contacto</button>
           </div>
         </div>
