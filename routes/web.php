@@ -13,6 +13,7 @@
 
 Route::resource('cliente','ClienteController');
 Route::resource('emprendedor','EmprendedorController');
+Route::resource('patrocinador','PatrocinadorController');
 
 Route::get('/', function () {
     return view('Inicio/pagprin');
