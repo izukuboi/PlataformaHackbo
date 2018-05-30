@@ -133,8 +133,15 @@
 
             <!--<h2 class="w3-center">Mejores Proyectos</h2>-->
 			<!--- "{{asset('img/psd-3.jpg')}}"-->
+	<div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
+	   <h2 class="w3-wide">Que Hacemos</h2>
+	   <p class="w3-justify">Como bolivia va creciendo y desrallandose muchos estudiantes, catedraticos, universitarios, trabajadores, etc..
+        Ocurre algo curioso, la gente se ah dado cuenta que se nesecita generar nuevas ideas para mantener vivo al mundo en el que estamos y por tanto una cresca como ser humano.
+        Puede que suene bonito todo esto, pero existe un pequeño problema que vamos hacer con tantas ideas, algunas de las ideas pueden llegar hacerte millonario, otras llevarte a un buen trabajo, otras ideas quizas no sean tan buenas pero es por que nadie te ah escuchado o quizas solo neseceties un poco de ayuda para mejorar tu idea que tienes en mente y haci lograr una meta en la vida que es ser exitoso en ella. 
+        </p>
 
-            <div class="w3-content w3-section" style="max-width:1000px">
+    </div>
+    <div class="w3-content w3-section" style="max-width:1000px">
               <img class="mySlides" src="{{asset('img/psd-1.jpg')}}" style="width:100%">
               <img class="mySlides" src="{{asset('img/psd-4.jpg')}}" style="width:100%">
               <img class="mySlides" src="{{asset('img/psd-3.jpg')}}" style="width:100%">
@@ -156,52 +163,6 @@
               setTimeout(carousel, 2000); // Change image every 2 seconds
             }
             </script>
-
-						<div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
-	 <h2 class="w3-wide">Emprende Ayuda</h2>
-	 <p class="w3-opacity"><i>Crea Patrocina Compra</i></p>
-	 <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-		 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-		 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
- </div>
- <!-- The Tour Section -->
- <!--- "{{asset('img/psd-1.jpg')}}"-->
-   <div class="w3-blue" id="tour">
-     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-       <h2 class="w3-wide w3-center">Top Proyectos</h2>
-       	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-         	<div class="w3-third w3-margin-bottom">
-           <img src="{{asset('img/psd-1.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
-           <div class="w3-container w3-white">
-             <p><b>Proyecto 1</b></p>
-             <p class="w3-opacity">Fecha</p>
-             <p>Descripcion</p>
-             <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
-           </div>
-         </div>
-         <div class="w3-third w3-margin-bottom">
-           <img src="{{asset('img/psd-1.jpg')}}" alt="Paris" style="width:100%" class="w3-hover-opacity">
-           <div class="w3-container w3-white">
-             <p><b>Proyecto 2</b></p>
-             <p class="w3-opacity">Fecha</p>
-             <p>Descripcion</p>
-             <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
-           </div>
-         </div>
-         <div class="w3-third w3-margin-bottom">
-           <img src="{{asset('img/psd-1.jpg')}}" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-           <div class="w3-container w3-white">
-             <p><b>Proyecto 3</b></p>
-             <p class="w3-opacity">Fecha</p>
-             <p>Descripcion</p>
-             <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
-
 					</section>
 
 				</div>
