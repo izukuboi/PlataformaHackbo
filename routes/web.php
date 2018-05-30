@@ -15,5 +15,5 @@ Route::resource('cliente','ClienteController');
 Route::resource('emprendedor','EmprendedorController');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Inicio/pagprin');
 });

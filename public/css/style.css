@@ -13,27 +13,27 @@ Text Domain: platz
 */
 
 /*-------------------------*/
-/* SOCIAM FONT ICON */
+/* SOCIAM FONT ICON   "{{asset('font/socialico_plus-webfont.svg#socialico_plusregular')}}" */
 /*-------------------------*/
 
 @font-face {
     font-family: 'socialicoregular';
-    src: url('font/socialico-webfont.eot');
-    src: url('font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/socialico-webfont.woff2') format('woff2'),
-         url('font/socialico-webfont.woff') format('woff'),
-         url('font/socialico-webfont.ttf') format('truetype'),
-         url('font/socialico-webfont.svg#socialicoregular') format('svg');
+    src: url("{{asset('font/socialico-webfont.eot')}}");
+    src: url("{{asset('font/socialico-webfont.eot?#iefix')}}") format('embedded-opentype'),
+         url("{{asset('font/socialico-webfont.woff2')}}") format('woff2'),
+         url("{{asset('font/socialico-webfont.woff')}}") format('woff'),
+         url("{{asset('font/socialico-webfont.ttf')}}") format('truetype'),
+         url("{{asset('font/socialico-webfont.svg#socialicoregular')}}") format('svg');
 }
 
 @font-face {
     font-family: 'socialico_plusregular';
-    src: url('font/socialico_plus-webfont.eot');
-    src: url('font/socialico_plus-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/socialico_plus-webfont.woff2') format('woff2'),
-         url('font/socialico_plus-webfont.woff') format('woff'),
-         url('font/socialico_plus-webfont.ttf') format('truetype'),
-         url('font/socialico_plus-webfont.svg#socialico_plusregular') format('svg');
+    src: url("{{asset('font/socialico_plus-webfont.eot')}}");
+    src: url("{{asset('font/socialico_plus-webfont.eot?#iefix')}}") format('embedded-opentype'),
+         url("{{asset('font/socialico_plus-webfont.woff2')}}") format('woff2'),
+         url("{{asset('font/socialico_plus-webfont.woff')}}") format('woff'),
+         url("{{asset('font/socialico_plus-webfont.ttf')}}") format('truetype'),
+         url("{{asset('font/socialico_plus-webfont.svg#socialico_plusregular')}}") format('svg');
 }
 
 /*-------------------------*/
@@ -242,7 +242,7 @@ body,html{
     height:100%;
 	background-color:rgba(34, 34, 34, 0.95);
 	left:-100%;
-	z-index:10000; !important
+	z-index:10000; 
 }
 
 .container-menu{
@@ -720,7 +720,7 @@ body,html{
 }
 }
 
-/* Small viewports — Old monitors, netbooks, tablets (landscape), etc. */
+/* Small viewports ï¿½ Old monitors, netbooks, tablets (landscape), etc. */
  
 @media only screen and (max-width: 965px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
@@ -758,7 +758,7 @@ body,html{
 }
 }
 
-/* Smaller viewports — more tablets, old monitors */
+/* Smaller viewports ï¿½ more tablets, old monitors */
  
 @media only screen and (max-width: 860px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
@@ -770,7 +770,7 @@ body,html{
 }
 }
 
-/* Even smaller viewports — more tablets, etc. */
+/* Even smaller viewports ï¿½ more tablets, etc. */
  
 @media only screen and (max-width: 740px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
