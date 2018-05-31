@@ -15,6 +15,9 @@ Route::resource('cliente','ClienteController');
 
 Route::resource('Inicio', 'InicioController');
 
+Route::resource('Registro','RegistroController');
+
+
 Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');

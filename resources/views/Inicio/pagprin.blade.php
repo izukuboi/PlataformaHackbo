@@ -44,7 +44,7 @@
 		<div class="navbar object navbar-info">
     		<div id="wrapper-sorting">
             <div id="wrapper-title-1">
-            <div class="top-rated object">Registrate</div>
+            <a href="{{action('RegistroController@create')}}" class="top-rated object">Registrate</a>
             	<div id="fleche-nav-1"></div>
     		</div>
 
