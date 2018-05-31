@@ -207,6 +207,21 @@
 
 <br><br>
 
+<!-- Modal Correos -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-at w3-margin-right"></i>Correos</h2>
+      </header>
+      <div class="w3-container">
+        <p><label>jrichij@gmail.com</label></p>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+      </div>
+    </div>
+  </div>
+
 
 
 
