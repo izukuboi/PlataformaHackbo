@@ -29,7 +29,7 @@
 <div id="wrapper-header">
 	<div id="main-header" class="object">
         <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Sobre Nosotros</div></a>
+            <a href="#"><div class="recent object">QuienesSomos</div></a>
         </div>
         <div id="wrapper-title-2">
             <a href="#"><div class="recent object">Como Funcionamos</div></a>
