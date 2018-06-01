@@ -135,9 +135,9 @@
 			<!--- "{{asset('img/psd-3.jpg')}}"-->
 
             <div class="w3-content w3-section" style="max-width:1000px">
-              <img class="mySlides" src="{{asset('img/psd-1.jpg')}}" style="width:100%">
-              <img class="mySlides" src="{{asset('img/psd-4.jpg')}}" style="width:100%">
-              <img class="mySlides" src="{{asset('img/psd-3.jpg')}}" style="width:100%">
+              <img class="mySlides" src="{{asset('img/1.jpg')}}" style="width:100%">
+              <img class="mySlides" src="{{asset('img/2.jpg')}}" style="width:100%">
+              <img class="mySlides" src="{{asset('img/3.jpg')}}" style="width:100%">
             </div>
 
             <script>
