@@ -29,7 +29,7 @@
 <div id="wrapper-header">
 	<div id="main-header" class="object">
         <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">QuienesSomos</div></a>
+            <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
         </div>
         <div id="wrapper-title-2">
             <a href="#"><div class="recent object">Como Funcionamos</div></a>
@@ -53,7 +53,7 @@
             </div>
             
             <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Registrate</div></a>
+            <a href="{{action('RegistroController@create')}}"><div class="recent object">Registrate</div></a>
             </div>
             
             <div id="wrapper-title-3">
