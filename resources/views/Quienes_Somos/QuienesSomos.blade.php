@@ -175,7 +175,7 @@
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
-          <img src="img/themoneitor.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="{{asset('img/themoneitor.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Ricardo "Richi" Cuellar</b></p>
             <p class="w3-opacity">"Todos me tiran un saving throw de percepción"</p>
@@ -184,7 +184,7 @@
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="img/marconi.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <img src="{{asset('img/marconi.jpg')}}" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Marco "The Last Airbender" Siñaniz </b></p>
             <p class="w3-opacity">"Vos tranquilo yo nervioso"</p>
@@ -193,7 +193,7 @@
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="img/izuku.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <img src="{{asset('img/izuku.jpg')}}" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Isaac "Deku" Rodriguez </b></p>
             <p class="w3-opacity">"omegalul"</p>
