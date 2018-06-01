@@ -24,6 +24,6 @@ Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');
 
 Route::get('/', function () {
-    return view('Quienes_Somos/QuienesSomos');
+    return view('Inicio/pagReg');
 });
 
