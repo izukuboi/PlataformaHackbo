@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class patrocinador extends Model
+class emprendedor extends Model
 {
-	protected $table='patrocinador';
+    protected $table='emprendedor';
 	//protected $dates = ['deleted_at'];
-    protected $primarykey='idPatrocinador';
+    protected $primarykey='idEmprendedor';
     public $timestamps = false;
 }

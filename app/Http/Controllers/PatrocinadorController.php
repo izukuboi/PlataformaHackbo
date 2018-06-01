@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\cliente;
+use App\patrocinador;
 use App\persona;
 use App\pais;
 use App\usuario;
@@ -12,7 +12,7 @@ use App\perfil;
 use DB;
 use DateTime;
 
-class ClienteController extends Controller
+class PatrocinadorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -32,7 +32,7 @@ class ClienteController extends Controller
     public function create()
     {
         $pais = pais::all();
-        return view('Cliente/RegistrarCliente',compact('pais'));
+        return view('Patrocinador/RegistrarPatrocinador',compact('pais'));
     }
 
     /**
@@ -43,35 +43,35 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-
         //dd($request->all());
-        $cliente = new cliente;
+        $patrocinador = new patrocinador;
         $persona = new persona;
         $user = new usuario;
         $userp = new usuarioPerfil;
-        $perfilCli = perfil::where('nombrePerfil','=','Cliente')->get()->first();
+        $perfilPatrocinador = perfil::where('nombrePerfil','=','Patrocinador')->get()->first();
 
-        $persona->nombre = $request->nombre;
-        $persona->apellido = $request->apellido;
-        $persona->idPais = $request->pais;
-        $persona->email = $request->email;
+        $persona->nombre = $request->Nombre;
+        $persona->apellido = $request->Apellido;
+        $persona->idPais = $request->Pais;
+        $persona->email = $request->Email;
         $persona->save();
         //dd($persona);
-        $cliente->idCliente = $persona->id;
-        $cliente->save();
+        $patrocinador->idPatrocinador = $persona->id;
+        $patrocinador->nombreEmpresa = $request->Empresa;
+        $patrocinador->save();
 
         $user->idUsuario = $persona->id;
-        $user->nick = $request->nick;
-        $user->password = $request->password;
+        $user->nick = $request->NombreUsuario;
+        $user->password = $request->Password;
         $user->fechaRegistro = new DateTime();
         $user->tipoCuenta = 'Free';
         $user->save();
 
         $userp->idUsuario = $persona->id;
-        $userp->idPerfil = $perfilCli->idPerfil;
+        $userp->idPerfil = $perfilPatrocinador->idPerfil;
         $userp->save();
 
-        return redirect()->action('ClienteController@create');
+        return redirect()->action('PatrocinadorController@create');
 
     }
 

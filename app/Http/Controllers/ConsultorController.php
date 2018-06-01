@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\cliente;
+use App\consultor;
 use App\persona;
 use App\pais;
 use App\usuario;
 use App\usuarioPerfil;
 use App\perfil;
+use App\especialidad;
 use DB;
 use DateTime;
 
-class ClienteController extends Controller
+class ConsultorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -32,7 +33,8 @@ class ClienteController extends Controller
     public function create()
     {
         $pais = pais::all();
-        return view('Cliente/RegistrarCliente',compact('pais'));
+        $especialidad = especialidad::all();
+        return view('Consultor/RegistrarConsultor',compact('pais','especialidad'));
     }
 
     /**
@@ -43,36 +45,37 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-
-        //dd($request->all());
-        $cliente = new cliente;
+        $consultor = new consultor;
         $persona = new persona;
         $user = new usuario;
         $userp = new usuarioPerfil;
-        $perfilCli = perfil::where('nombrePerfil','=','Cliente')->get()->first();
+        $perfilCon = perfil::where('nombrePerfil','=','Consultor')->get()->first();
 
-        $persona->nombre = $request->nombre;
-        $persona->apellido = $request->apellido;
-        $persona->idPais = $request->pais;
-        $persona->email = $request->email;
+        $persona->nombre = $request->Nombre;
+        $persona->apellido = $request->Apellido;
+        $persona->idPais = $request->Pais;
+        $persona->email = $request->Email;
         $persona->save();
         //dd($persona);
-        $cliente->idCliente = $persona->id;
-        $cliente->save();
+        $consultor->idConsultor = $persona->id;
+        $consultor->idEspecialidad = $request->Especialidad;
+        //$consultor->CV = $request->CV;
+        $consultor->tarifaConsultoria = $request->TarifaConsultoria;
+        $consultor->descripcion = $request->Descripcion;
+        $consultor->save();
 
         $user->idUsuario = $persona->id;
-        $user->nick = $request->nick;
-        $user->password = $request->password;
+        $user->nick = $request->NombreUsuario;
+        $user->password = $request->Password;
         $user->fechaRegistro = new DateTime();
         $user->tipoCuenta = 'Free';
         $user->save();
 
         $userp->idUsuario = $persona->id;
-        $userp->idPerfil = $perfilCli->idPerfil;
+        $userp->idPerfil = $perfilCon->idPerfil;
         $userp->save();
 
-        return redirect()->action('ClienteController@create');
-
+        return redirect()->action('ConsultorController@create');
     }
 
     /**

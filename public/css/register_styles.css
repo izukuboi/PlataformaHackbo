@@ -1,0 +1,103 @@
+*{
+	box-sizing: border-box;
+}
+
+.btn{
+	border-radius: 3px;
+	display: inline-block;
+	padding: 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+	width: 100%;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.btn-green{
+	color: white;
+	background-color: #0cbdff;
+}
+.btn-green:hover{
+	background-color: #C0C0C0;
+
+}
+.btn-green:active{
+	background-color: #00008B;
+}
+
+
+		body{font-family: Arial; 
+			 box-sizing: border-box;
+			 margin: auto;
+			 background-image: url(https://thumbs.dreamstime.com/z/fondo-de-la-comunicaci%C3%B3n-del-servicio-de-atenci%C3%B3n-al-cliente-61299921.jpg);
+			 background-size:100%;
+			}
+
+		form{
+
+			background-color: #F8F8FF;
+			border: solid;
+			border-color: #C0C0C0;
+			border-radius: 3px;
+			color: #999;
+			font-size: 0.8em;
+			padding: 20px;
+			margin: 0 auto;
+			width: 20%;
+		}
+		input, textarea{
+			border: 0;
+			outline: none;
+			width: 100%;
+			margin: auto;
+		}
+		.field{
+			border: solid 1px #ccc;
+			padding: 10px;
+			
+		}
+		.field:focus{
+			border-color: #18A383;
+		}
+		.center-content{
+			text-align: center;
+		}
+		.combobox{
+			background-color: white;
+			border-radius: 3px;
+			color: #999;
+			font-size: 1em;
+			padding: 10px;
+			margin: 0 auto;
+			width: 100%;
+		}
+		.form-titulo{
+			background-color: #F8F8FF;
+			color: #000000;
+			padding: 10px;
+			text-align: center;
+			font-weight: 100;
+			font-size: 100%;
+
+
+		}
+		.form-register{
+			width: 100%;
+			max-width: 500px;
+			margin: auto;
+			background: #F8F8FF;
+			border-radius: 7px;
+		}
+
+
+@media screen and (max-width: 800px) {
+
+			.form-register{
+			max-width: 100%;
+			margin: auto;
+			background: #F8F8FF;
+			border-radius: 7px;
+		}
+
+}

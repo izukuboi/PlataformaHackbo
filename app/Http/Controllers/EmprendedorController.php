@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\cliente;
+use App\emprendedor;
 use App\persona;
 use App\pais;
 use App\usuario;
@@ -12,7 +13,7 @@ use App\perfil;
 use DB;
 use DateTime;
 
-class ClienteController extends Controller
+class EmprendedorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -32,7 +33,7 @@ class ClienteController extends Controller
     public function create()
     {
         $pais = pais::all();
-        return view('Cliente/RegistrarCliente',compact('pais'));
+        return view('Emprendedor/RegistrarEmprendedor',compact('pais'));
     }
 
     /**
@@ -43,13 +44,12 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-
-        //dd($request->all());
-        $cliente = new cliente;
+        //dd($request);
+        $emp = new emprendedor;
         $persona = new persona;
         $user = new usuario;
         $userp = new usuarioPerfil;
-        $perfilCli = perfil::where('nombrePerfil','=','Cliente')->get()->first();
+        $perfilCli = perfil::where('nombrePerfil','=','Emprendedor')->get()->first();
 
         $persona->nombre = $request->nombre;
         $persona->apellido = $request->apellido;
@@ -57,8 +57,8 @@ class ClienteController extends Controller
         $persona->email = $request->email;
         $persona->save();
         //dd($persona);
-        $cliente->idCliente = $persona->id;
-        $cliente->save();
+        $emp->idEmprendedor = $persona->id;
+        $emp->save();
 
         $user->idUsuario = $persona->id;
         $user->nick = $request->nick;
@@ -71,8 +71,7 @@ class ClienteController extends Controller
         $userp->idPerfil = $perfilCli->idPerfil;
         $userp->save();
 
-        return redirect()->action('ClienteController@create');
-
+        return 'Emprendedor '.$request->nombre.' registrado';
     }
 
     /**
