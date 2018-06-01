@@ -30,7 +30,7 @@
 		body{font-family: Arial; 
 			 box-sizing: border-box;
 			 margin: auto;
-			 background: url(https://thumbs.dreamstime.com/z/fondo-de-la-comunicaci%C3%B3n-del-servicio-de-atenci%C3%B3n-al-cliente-61299921.jpg);
+			 background-image: url(https://thumbs.dreamstime.com/z/fondo-de-la-comunicaci%C3%B3n-del-servicio-de-atenci%C3%B3n-al-cliente-61299921.jpg);
 			 background-size:100%;
 			}
 
@@ -89,3 +89,15 @@
 			background: #F8F8FF;
 			border-radius: 7px;
 		}
+
+
+@media screen and (max-width: 800px) {
+
+			.form-register{
+			max-width: 100%;
+			margin: auto;
+			background: #F8F8FF;
+			border-radius: 7px;
+		}
+
+}

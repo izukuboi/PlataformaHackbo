@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Regístrate</title>
 	<link rel="stylesheet" href="boton.css">
-	<link rel="stylesheet" href="{{ asset('css/boton.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/register_styles.css') }}">
 </head>
 <body>
 	<form action="" class = "form-register">
