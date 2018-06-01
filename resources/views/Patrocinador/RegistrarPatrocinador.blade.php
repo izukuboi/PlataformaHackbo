@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8">
 	<title>Regístrate</title>
-	<link rel="stylesheet" href="{{ asset('css/boton.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/register_styles.css') }}">
 </head>
 <body>
 	<form action="{{ action('PatrocinadorController@store') }}"  class = "form-register" method="post">
