@@ -17,6 +17,7 @@
 .btn-green{
 	color: white;
 	background-color: #0cbdff;
+	text-align: center;
 }
 .btn-green:hover{
 	background-color: #C0C0C0;
