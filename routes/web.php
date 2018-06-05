@@ -33,3 +33,7 @@ Route::get('/', function () {
 Route::get('/prueba', function () {
     return view('Proyecto/vistaproy');
 });
+
+Route::get('/Pruebalogin', function () {
+    return view('Login/Login');
+});
