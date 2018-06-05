@@ -13,11 +13,20 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/stylepagprin.css')}}" rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/fonts.css')}}" rel='stylesheet'>
 	
 
 </head>
 
 <body>
+
+<div class="social">
+	<ul>
+		<li><a href="" class="icon-pushpin"></a></li>
+		<li><a href="" class="icon-pushpin"></a></li>
+		<li><a href="" class="icon-pushpin"></a></li>
+	</ul>
+</div>
 
 <a name="ancre"></a>
 
