@@ -19,6 +19,10 @@ Route::resource('Registro','RegistroController');
 Route::resource('QuienesSomos', 'QuienesSomosController');
 
 
+Route::resource('Proyecto', 'ProyectoController');
+
+
+
 Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');
@@ -26,4 +30,6 @@ Route::resource('consultor', 'ConsultorController');
 Route::get('/', function () {
     return view('Inicio/pagReg');
 });
-
+Route::get('/prueba', function () {
+    return view('Proyecto/vistaproy');
+});
