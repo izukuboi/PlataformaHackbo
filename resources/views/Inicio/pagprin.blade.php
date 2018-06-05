@@ -37,21 +37,20 @@
 
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-        <div id="wrapper-title-2">
+       <!--	<div id="wrapper-title-2">
             <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Como Funcionamos</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Contactanos</div></a>
-        </div>
-		<!--<div class="logo"><img src="img/logo-burst.png" alt="logo platz" height="60" width="90"></div>-->
+        </div>-->
+<div class="dropdown">
+  <button class="dropbtn">INFORMATE</button>
+  <div class="dropdown-content">
+    <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
+    <a href="#">Como Funcionamos</a>
+    <a href="#">Contactanos</a>
+  </div>
+</div> 
 	</div>
         <div id="stripes"></div>
     </div>
-</div>
-
 <!-- NAVBAR -->
 
 <div id="wrapper-navbar">
