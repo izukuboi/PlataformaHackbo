@@ -1277,7 +1277,7 @@ textarea {
                 <div class="title-item">
                 	<div class="title-icon"></div>
                     <div class="title-text">  {{$proyecto -> nombre}}  </div>
-					<div class="title-text-2">Richard Hendricks</div>
+					<div class="title-text-2">{{$equipoemprendedor -> nombreEquipo}} </div>
 					
 					
                 </div>

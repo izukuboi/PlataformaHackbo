@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\proyecto;
-
+use App\equipoemprendedor;
 class ProyectoController extends Controller
 {
     /**
@@ -52,8 +52,8 @@ class ProyectoController extends Controller
         $proyecto =  proyecto::where('idProyecto','=',$id)->get()->first();
         //dd($proyecto);
        
-        
-        return view('Proyecto/DetallesProyecto',compact('proyecto') );
+        $equipoemprendedor = equipoemprendedor::where('idEquipoEmprendedor','=',$proyecto->idEquipoEmprendedor)->get()->first();
+        return view('Proyecto/DetallesProyecto',compact('proyecto','equipoemprendedor'));
         
     }
 
