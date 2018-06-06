@@ -21,6 +21,10 @@ Route::resource('QuienesSomos', 'QuienesSomosController');
 
 Route::resource('Proyecto', 'ProyectoController');
 
+Route::any('/usuario', 'UsuarioController@ActionIndex');
+
+//Route::resource('/usuario/c','UsuarioController');
+
 
 
 Route::resource('emprendedor','EmprendedorController');
