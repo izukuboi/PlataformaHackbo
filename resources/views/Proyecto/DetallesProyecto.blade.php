@@ -1315,24 +1315,14 @@ textarea {
                 
                 	<div class="wrapper-file">
                     	<div class="icon-file"><img src="{{asset('img/icon-psdfile.svg')}}" alt="" width="21" height="21"/></div>
-                        <div class="text-file">Categoria</div>
+                        <div class="text-file">{{$categoria -> nombreCategoria}}</div>
                     </div>
                     
                     
                     <div class="wrapper-desc">
                     	<!--<div class="icon-desc"><img src="img/icon-doc.png" alt="" width="24" height="24"/></div>-->
                         <div class="text-desc">
-							Debajo de las llamativas páginas de inicio de sus sitios favoritos, se esconden Hooli ™ y otras
-							corporaciones malvadas que acaparan y venden sus datos más personales.
-							
-							Lo que se creó para ser la plataforma definitiva para el intercambio libre de conocimiento
-							se ha convertido en un monstruo sediento de dinero que se deleita con nuestra privacidad y libertad.
-							
-							Pero no temas, ¡porque Pied Piper tiene la respuesta! Y es simple:
-							Una red autónoma punto a punto que presenta almacenamiento distribuido con tecnología de
-							compresión universal, asignación acelerada de programación y encriptación de extremo a extremo.
-							
-							Ponga aún más simple: es internet, completamente descentralizado. </div>
+							{{$proyecto -> descripcion}} </div>
                     </div>
                     
                     <div class="wrapper-download">
@@ -1366,7 +1356,7 @@ textarea {
     	</div>
 	</div>-->
 	    
-	<div id="main-container-footer" >
+<!-- 	<div id="main-container-footer" >
 		<div class="container-footer">
         	
              <div id="row-1f">
@@ -1393,7 +1383,7 @@ textarea {
             
 		</div>
 	</div>
-    
+     -->
     
     <div id="wrapper-copyright">
 		<div class="copyright">

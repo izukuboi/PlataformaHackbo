@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\proyecto;
 use App\equipoemprendedor;
+use App\categoria;
 class ProyectoController extends Controller
 {
     /**
@@ -53,7 +54,8 @@ class ProyectoController extends Controller
         //dd($proyecto);
        
         $equipoemprendedor = equipoemprendedor::where('idEquipoEmprendedor','=',$proyecto->idEquipoEmprendedor)->get()->first();
-        return view('Proyecto/DetallesProyecto',compact('proyecto','equipoemprendedor'));
+        $categoria = categoria::where('idCategoria','=',$proyecto->idCategoria)->get()->first();
+        return view('Proyecto/DetallesProyecto',compact('proyecto','equipoemprendedor','categoria'));
         
     }
 
