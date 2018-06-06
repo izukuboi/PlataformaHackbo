@@ -1283,7 +1283,13 @@ textarea {
                 </div>
 				
 				<div class="title-item">
-						<div class="title-text-2">Fecha de inicio: 24 de Septiembre 2018</div>
+				
+				
+				<?php
+          		$newDate1 = date("d/m/Y", strtotime($proyecto->fechainicio));
+				?>
+				
+					<div class="title-text-2">Fecha de inicio: {{$newDate1}}</div>
 						
 					</div>
      			       
