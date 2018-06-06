@@ -1276,7 +1276,7 @@ textarea {
             	
                 <div class="title-item">
                 	<div class="title-icon"></div>
-                    <div class="title-text">Pied Piper</div>
+                    <div class="title-text">  {{$proyecto -> nombre}}  </div>
 					<div class="title-text-2">Richard Hendricks</div>
 					
 					
@@ -1286,7 +1286,7 @@ textarea {
 				
 				
 				<?php
-          		$newDate1 = date("d/m/Y", strtotime($proyecto->fechainicio));
+          		$newDate1 = date("d/m/Y", strtotime($proyecto->fechaInicio));
 				?>
 				
 					<div class="title-text-2">Fecha de inicio: {{$newDate1}}</div>

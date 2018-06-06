@@ -48,10 +48,12 @@ class ProyectoController extends Controller
      */
     public function show($id)
     {
-        dd($id);
+        
         $proyecto =  proyecto::where('idProyecto','=',$id)->get()->first();
-        return 
-        view('view.name', $data);
+        //dd($proyecto);
+       
+        
+        return view('Proyecto/DetallesProyecto',compact('proyecto') );
         
     }
 
