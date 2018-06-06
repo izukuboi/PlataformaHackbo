@@ -8,15 +8,17 @@
 	<link rel="stylesheet" href="{{ asset('css/register_styles.css') }}">
 </head>
 <body>
-	<form action="" class = "form-login">
+	<form action="{{ action('UsuarioController@ActionIndex') }}" class = "form-login" method = "post">
+	{{ csrf_field() }}
+	prueba {{Session::get('InicioSesion','caca')}}
 		<h2>Ingresar</h2>
 
 	<div class= "contenedor-inputs"
 		<p>Nombre Usuario:</p>
-		<input type="text" class="field" name= "Nombre"required placeholder="Nombre Usuario"> <br/>
+		<input type="text" class="field" name="Nombre" id="Nombre" required placeholder="Nombre Usuario"> <br/>
 
 		<p>Password:</p>
-		<input type="text" class="field" name="Apellido" required placeholder="Password"> <br/>
+		<input type="text" class="field" name="Password"  id="Password" required placeholder="Password Usuario"  > <br/>
 
 
 		<p class="center-content">

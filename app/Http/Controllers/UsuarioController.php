@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Input;
+use App\usuario;
+use Session;
+use App\usuarioPerfil;
 class UsuarioController extends Controller
 {
     /**
@@ -14,6 +17,7 @@ class UsuarioController extends Controller
     public function index()
     {
         //
+
     }
 
     /**
@@ -80,5 +84,21 @@ class UsuarioController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function ActionIndex()
+    {        
+        if($_POST)
+        {
+            //dd(Input::get('Nombre'));
+            $usuario = usuario::where('nick','=',Input::get('Nombre'))->where('password','=',Input::get('Password'))->get()->first();
+            $id= $usuario->idUsuario;
+            session(['InicioSesion' => $id]);
+            //session()->set('IncioSesion',$id);
+            //dd(Session::get('InicioSesion', 'caca'));
+            return redirect()->action('InicioController@create');;
+            
+        }
+        
     }
 }

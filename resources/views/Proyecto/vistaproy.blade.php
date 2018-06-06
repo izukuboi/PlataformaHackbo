@@ -120,8 +120,7 @@
 			<div id="main-container-image">
 
 					<section class="work">
-
-						<figure class="white">
+						<!-- <figure class="white">
 							<a href="#">
 								<img src="{{asset('img/psd-4.jpg')}}" alt="" />
 								<dl>
@@ -133,7 +132,7 @@
                             	<div class="part-info-image"><img src="https://ih0.redbubble.net/image.56249417.4683/flat,800x800,075,t.u2.jpg" alt="" width="28" height="28"/></div>
                             	<div id="part-info">Pied Piper</div>
 							</div>
-						</figure>
+						</figure> -->
 						@foreach ($proyecto as $p)
 						<figure class="white">
 							<a href="{{ action('ProyectoController@show' , $p -> idProyecto )}}">
