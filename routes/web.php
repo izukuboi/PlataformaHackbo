@@ -37,3 +37,7 @@ Route::get('/prueba', function () {
 Route::get('/Pruebalogin', function () {
     return view('Login/Login');
 });
+
+Route::get('/PruebaAngel', function () {  /* Hubo cambios en esta partee!!! */
+    return view('Proyecto/DetallesProyecto');
+});
