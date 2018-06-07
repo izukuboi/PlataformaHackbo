@@ -18,11 +18,11 @@ Route::resource('Registro','RegistroController');
 
 Route::resource('QuienesSomos', 'QuienesSomosController');
 
-
+Route::resource('RegistrarProyecto', 'RegistrarProyectoController');
 Route::resource('Proyecto', 'ProyectoController');
 
 
-
+Route::resource('PublicaProyecto', 'PublicaProyectoController');
 Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');

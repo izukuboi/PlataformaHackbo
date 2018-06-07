@@ -34,14 +34,18 @@
 <div class="cache"></div>
 
 <!-- HEADER -->
-
+<div class="w3-jumbo">
+		<a href="{{action('InicioController@create')}}"<b> Emprende Ayuda!</b> </a>
+</div>
 <div id="wrapper-header">
+
 	<div id="main-header" class="object">
        <!--	<div id="wrapper-title-2">
             <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
-        </div>-->
+		</div>-->
+		
 <div class="dropdown">
-  <button class="dropbtn">INFORMATE</button>
+<button class="dropbtn">INFORMATE</button>	
   <div class="dropdown-content">
     <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
     <a href="#">Como Funcionamos</a>
@@ -57,7 +61,8 @@
 	<div class="navbar object navbar-info">
 		<div id="wrapper-sorting">
 	   <div id="wrapper-title-1">
-		<div class="top-rated object">Busca Proyectos</div>
+		<div class="top-rated object"></div>
+		<a href="{{action('ProyectoController@create')}}"><div class="recent object">Busca Proyectos</div></a>
 		</div>
 		
 		<div id="wrapper-title-2">
@@ -69,7 +74,8 @@
 		</div>
 
 		<div id="wrapper-title-3">
-		<a href="#"><div class="oldies object">Publica un Proyecto</div></a>
+		<a href="{{action('RegistrarProyectoController@create')}}"><div class="recent object">Publica un Proyecto</div></a>
+		
 		</div>
 		</div>
 		<div id="wrapper-bouton-icon">
@@ -143,7 +149,7 @@
 			<!--- "{{asset('img/psd-3.jpg')}}"-->
 
             <div class="w3-content w3-section" style="max-width:1000px">
-              <img class="mySlides" src="{{asset('img/1.jpg')}}" style="width:100%">
+              <img class="mySlides" src="{{asset('img/portadainicio.jpg')}}" style="width:100%">
               <img class="mySlides" src="{{asset('img/2.jpg')}}" style="width:100%">
               <img class="mySlides" src="{{asset('img/3.jpg')}}" style="width:100%">
             </div>
