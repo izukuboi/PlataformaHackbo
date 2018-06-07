@@ -13,7 +13,7 @@
 
 	<div class= "contenedor-inputs"
 		<p>Nombre:</p>
-		<input type="text" class="field" name= "Nombre"required> <br/>
+		<input type="text" class="field" name= "Nombre Proyecto"required> <br/>
 
 		<p>Apellido:</p>
 		<input type="text" class="field" name="Apellido" required> <br/>
