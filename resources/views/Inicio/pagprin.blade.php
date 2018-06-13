@@ -20,13 +20,13 @@
 
 <body>
 
-<div class="social">
+<!--<div class="social">
 	<ul>
 		<li><a href="" class="icon-pushpin"></a></li>
 		<li><a href="" class="icon-pushpin"></a></li>
 		<li><a href="" class="icon-pushpin"></a></li>
 	</ul>
-</div>
+</div>-->
 
 <a name="ancre"></a>
 
@@ -64,7 +64,6 @@
 		<div class="top-rated object"></div>
 		<a href="{{action('ProyectoController@create')}}"><div class="recent object">Busca Proyectos</div></a>
 		</div>
-		
 		<div id="wrapper-title-2">
 		<a href="{{action('RegistroController@create')}}"><div class="recent object">Registrate</div></a>
 		</div>
