@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 
+<!-- assets y que funcione con la base de datos -->
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,7 +10,7 @@
 <!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/png" href="img/small-logo-01.png">
+    <link rel="icon" type="image/png" href="{{asset('img/small-logo-01.png')}}">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<style>
@@ -20,22 +21,22 @@
 
 @font-face {
     font-family: 'socialicoregular';
-    src: url('font/socialico-webfont.eot');
-    src: url('font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/socialico-webfont.woff2') format('woff2'),
-         url('font/socialico-webfont.woff') format('woff'),
-         url('font/socialico-webfont.ttf') format('truetype'),
-         url('font/socialico-webfont.svg#socialicoregular') format('svg');
+    src: url("{{asset('font/socialico-webfont.eot')}}");
+    src: url("{{asset('font/socialico-webfont.eot?#iefix')}}") format('embedded-opentype'),
+         url("{{asset('font/socialico-webfont.woff2')}}") format('woff2'),
+         url("{{asset('font/socialico-webfont.woff')}}") format('woff'),
+         url("{{asset('font/socialico-webfont.ttf')}}") format('truetype'),
+         url("{{asset('font/socialico-webfont.svg#socialicoregular')}}") format('svg');
 }
 
 @font-face {
     font-family: 'socialico_plusregular';
-    src: url('font/socialico_plus-webfont.eot');
-    src: url('font/socialico_plus-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/socialico_plus-webfont.woff2') format('woff2'),
-         url('font/socialico_plus-webfont.woff') format('woff'),
-         url('font/socialico_plus-webfont.ttf') format('truetype'),
-         url('font/socialico_plus-webfont.svg#socialico_plusregular') format('svg');
+    src: url("{{asset('font/socialico_plus-webfont.eot')}}");
+    src: url("{{asset('font/socialico_plus-webfont.eot?#iefix')}}") format('embedded-opentype'),
+         url("{{asset('font/socialico_plus-webfont.woff2')}}") format('woff2'),
+         url("{{asset('font/socialico_plus-webfont.woff')}}") format('woff'),
+         url("{{asset('font/socialico_plus-webfont.ttf')}}") format('truetype'),
+         url("{{asset('font/socialico_plus-webfont.svg#socialico_plusregular')}}") format('svg');
 }
 
 
@@ -133,7 +134,7 @@ body,html{
 }
 
 #stripes{
-	background: url(img/stripes.svg) no-repeat;
+	background: url("{{asset('img/stripes.svg')}}") no-repeat; /*Hubo cambios en esta parte*/
 	position:absolute;
 	width:27px;
 	height:20px;
@@ -190,7 +191,7 @@ body,html{
 #fleche-nav-1,#fleche-nav-2,#fleche-nav-3{
 	float:left;
 	margin-top:26px;
-	background: url(img/fleche-nav.svg) no-repeat ;
+	background: url("{{asset('img/fleche-nav.svg')}}") no-repeat ;
 	width:5px;
 	height:10px;
 	margin-left:5px;
@@ -271,7 +272,7 @@ body,html{
 	height:18px;
 	right:25px;
 	margin-top:25px;
-	background: url(img/cross-menu.svg) no-repeat;
+	background: url("{{asset('img/cross-menu.svg')}}") no-repeat;
 	cursor:pointer;
 }
 
@@ -292,7 +293,7 @@ body,html{
 	height:53px;
 	left:50%;
 	margin-left:-65.5px;
-	background: url(img/small-logo.svg) no-repeat;
+	background: url("{{asset('img/small-logo.svg')}}") no-repeat;
 }
 
 /*----------------------------*/
@@ -484,8 +485,8 @@ body,html{
 	top:0;	
 }
 
-.image-reply-post{background: url(img/avatar.png) no-repeat;}
-.image-reply-post-2{background: url(img/avatar-2.png) no-repeat;}
+.image-reply-post{background: url("{{asset('img/avatar.png')}}") no-repeat;}
+.image-reply-post-2{background: url("{{asset('img/avatar-2.png')}}") no-repeat;}
 
 .name-reply-post,.name-reply-post-2{
 	float:left;
@@ -627,7 +628,7 @@ textarea.placeholder {
 	float:left;
 	width:68px;
 	height:68px;
-	background: url(img/piedpiper.jpg) no-repeat;
+	background: url("{{asset('img/piedpiper.jpg')}}") no-repeat;
 	margin-right:20px;
 }
 
@@ -805,7 +806,7 @@ textarea.placeholder {
 	-webkit-appearance: none;
     box-shadow: none; 
 	outline: 0;
-	background: url(img/icon-newsletter.svg) no-repeat 10px 9px;
+	background: url("{{asset('img/icon-newsletter.svg')}}") no-repeat 10px 9px;
 	margin-left:20px;
 	vertical-align:center;
 	font-weight:400;
@@ -836,7 +837,7 @@ textarea.placeholder {
     box-shadow: none; 
 	outline: 0;
 	margin: 0;
-	background: url(img/icon-search.svg) no-repeat 12px 7px;
+	background: url("{{asset('img/icon-search.svg')}}") no-repeat 12px 7px;
 	vertical-align:center;
 	margin-left:-40px;
 	background-color:#FFF;
@@ -844,7 +845,7 @@ textarea.placeholder {
 
 #loupe{
 	position:absolute;
-	background: url(img/loupe.svg) no-repeat;
+	background: url("{{asset('img/loupe.svg')}}") no-repeat;
 	width:28px;
 	height:30px;
 	right:20px;
@@ -1214,12 +1215,12 @@ textarea {
             </div>
             </div>
             <div id="wrapper-bouton-icon">
-            	<div id="bouton-ai"><img src="img/icon-ai.svg" alt="illustrator" title="Illustrator" height="28" width="28"></div>
-            	<div id="bouton-psd"><img src="img/icon-psd.svg" alt="photoshop" title="Photoshop" height="28" width="28"></div>
-            	<div id="bouton-theme"><img src="img/icon-themes.svg" alt="theme" title="Theme" height="28" width="28"></div>
-            	<div id="bouton-font"><img src="img/icon-font.svg" alt="font" title="Font" height="28" width="28"></div>
-            	<div id="bouton-photo"><img src="img/icon-photo.svg" alt="photo" title="Photo" height="28" width="28"></div>
-            	<div id="bouton-premium"><img src="img/icon-premium.svg" alt="premium" title="Premium" height="28" width="28"></div>
+            	<div id="bouton-ai"><img src="{{asset('img/icon-ai.svg')}}" alt="illustrator" title="Illustrator" height="28" width="28"></div>
+            	<div id="bouton-psd"><img src="{{asset('img/icon-psd.svg')}}" alt="photoshop" title="Photoshop" height="28" width="28"></div>
+            	<div id="bouton-theme"><img src="{{asset('img/icon-themes.svg')}}" alt="theme" title="Theme" height="28" width="28"></div>
+            	<div id="bouton-font"><img src="{{asset('img/icon-font.svg')}}" alt="font" title="Font" height="28" width="28"></div>
+            	<div id="bouton-photo"><img src="{{asset('img/icon-photo.svg')}}" alt="photo" title="Photo" height="28" width="28"></div>
+            	<div id="bouton-premium"><img src="{{asset('img/icon-premium.svg')}}" alt="premium" title="Premium" height="28" width="28"></div>
 			</div>
     	</div>
     </div>
@@ -1275,61 +1276,57 @@ textarea {
             	
                 <div class="title-item">
                 	<div class="title-icon"></div>
-                    <div class="title-text">Pied Piper</div>
-					<div class="title-text-2">Richard Hendricks</div>
+                    <div class="title-text">  {{$proyecto -> nombre}}  </div>
+					<div class="title-text-2">{{$equipoemprendedor -> nombreEquipo}} </div>
 					
 					
                 </div>
 				
 				<div class="title-item">
-						<div class="title-text-2">Fecha de inicio: 24 de Septiembre 2018</div>
+				
+				
+				<?php
+          		$newDate1 = date("d/m/Y", strtotime($proyecto->fechaInicio));
+				?>
+				
+					<div class="title-text-2">Fecha de inicio: {{$newDate1}}</div>
 						
 					</div>
      			       
 				
 				<div class="work">
 					<figure class="white">
-							 <img src="img/mobile_pied_piper.jpg" alt="" width="628" height="437"/> <!-- Imagen principal -->
+							 <img src="{{asset('img/mobile_pied_piper.jpg')}}" alt="" width="628" height="437"/> <!-- Imagen principal -->
                          <div id="wrapper-part-info">
                              <div class="part-info-image-single">
-                              <img src="img/pied_piper_compress1.jpg" alt="" width="628" height="437"/>
-                                <img src="img/silicon-valley.jpg" alt="" width="628" height="437"/>
+                              <img src="{{asset('img/pied_piper_compress1.jpg')}}" alt="" width="628" height="437"/>
+                                <img src="{{asset('img/silicon-valley.jpg')}}" alt="" width="628" height="437"/>
                                 
                              </div>
 						 </div>
                     </figure>	
 				
                 <div class="wrapper-text-description">
-                
+                <!-- 
                 	<div class="wrapper-view">
-                    	<div class="icon-view"><img src="img/icon-eye.svg" alt="" width="24" height="16"/></div>
+                    	<div class="icon-view"><img src="{{asset('img/icon-eye.svg')}}" alt="" width="24" height="16"/></div>
                         <div class="text-view">2,451 visitas</div>
-                    </div>
+                    </div> -->
                 
                 	<div class="wrapper-file">
-                    	<div class="icon-file"><img src="img/icon-psdfile.svg" alt="" width="21" height="21"/></div>
-                        <div class="text-file">Categoria</div>
+                    	<div class="icon-file"><img src="{{asset('img/icon-psdfile.svg')}}" alt="" width="21" height="21"/></div>
+                        <div class="text-file">{{$categoria -> nombreCategoria}}</div>
                     </div>
                     
                     
                     <div class="wrapper-desc">
                     	<!--<div class="icon-desc"><img src="img/icon-doc.png" alt="" width="24" height="24"/></div>-->
                         <div class="text-desc">
-							Debajo de las llamativas páginas de inicio de sus sitios favoritos, se esconden Hooli ™ y otras
-							corporaciones malvadas que acaparan y venden sus datos más personales.
-							
-							Lo que se creó para ser la plataforma definitiva para el intercambio libre de conocimiento
-							se ha convertido en un monstruo sediento de dinero que se deleita con nuestra privacidad y libertad.
-							
-							Pero no temas, ¡porque Pied Piper tiene la respuesta! Y es simple:
-							Una red autónoma punto a punto que presenta almacenamiento distribuido con tecnología de
-							compresión universal, asignación acelerada de programación y encriptación de extremo a extremo.
-							
-							Ponga aún más simple: es internet, completamente descentralizado. </div>
+							{{$proyecto -> descripcion}} </div>
                     </div>
                     
                     <div class="wrapper-download">
-						<div class="icon-download"><img src="img/donate.png" alt="" width="19" height="26"/></div>
+						<div class="icon-download"><img src="{{asset('img/donate.png')}}" alt="" width="19" height="26"/></div>
 						
                         <div class="text-download"><a href="compra.php"><b>Donar</b></a></div>
                     </div>
@@ -1337,10 +1334,10 @@ textarea {
                     <div class="wrapper-morefrom">
                     	<div class="text-morefrom">Otros proyectos</div>
                         <div class="image-morefrom">
-                        	<a href="#"><div class="image-morefrom-1"><img src="img/psd-1.jpg" alt="" width="430" height="330"/></div></a>
-                            <a href="#"><div class="image-morefrom-2"><img src="img/psd-2.jpg" alt="" width="430" height="330"/></div></a>
-                            <a href="#"><div class="image-morefrom-3"><img src="img/psd-3.jpg" alt="" width="430" height="330"/></div></a>
-                            <a href="#"><div class="image-morefrom-4"><img src="img/psd-6.jpg" alt="" width="430" height="330"/></div></a>
+                        	<a href="#"><div class="image-morefrom-1"><img src="{{asset('img/psd-1.jpg')}}" alt="" width="430" height="330"/></div></a>
+                            <a href="#"><div class="image-morefrom-2"><img src="{{asset('img/psd-2.jpg')}}" alt="" width="430" height="330"/></div></a>
+                            <a href="#"><div class="image-morefrom-3"><img src="{{asset('img/psd-3.jpg')}}" alt="" width="430" height="330"/></div></a>
+                            <a href="#"><div class="image-morefrom-4"><img src="{{asset('img/psd-6.jpg')}}" alt="" width="430" height="330"/></div></a>
                         </div>
                     </div>
                     
@@ -1359,7 +1356,7 @@ textarea {
     	</div>
 	</div>-->
 	    
-	<div id="main-container-footer">
+<!-- 	<div id="main-container-footer" >
 		<div class="container-footer">
         	
              <div id="row-1f">
@@ -1386,7 +1383,7 @@ textarea {
             
 		</div>
 	</div>
-    
+     -->
     
     <div id="wrapper-copyright">
 		<div class="copyright">
@@ -1407,14 +1404,14 @@ textarea {
 
 <!-- SCRIPT -->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
-	<script type="text/javascript" src="js/fastclick.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flip.min.js"></script>
-	<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
-	<script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>    
+	<script src="{{asset('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.scrollTo.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.localScroll.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery-animate-css-rotate-scale.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/fastclick.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/jquery.flip.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/jquery.animate-colors-min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/jquery.animate-shadow-min.js')}}"></script>    
 	
 	<script>
 	
@@ -1731,7 +1728,7 @@ $(document).on('touchend mouseout', '#logo', function(event){
 	
 $("form").on("submit", function(event) {
   event.preventDefault();
-  $.post("/burstfly/form-burstfly-modified.asp",$("form").serialize(), function(data) {//alert(data);
+  $.post("'{{asset('/burstfly/form-burstfly-modified.asp')}}",$("form").serialize(), function(data) {//alert(data);
 	});
 });
 

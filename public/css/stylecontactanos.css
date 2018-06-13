@@ -1,3 +1,17 @@
+/*
+Theme Name: Platz
+Theme URI: 
+Author: Dcrazed
+Author URI: https://dcrazed.com/
+Description: Platz is a free grid wordpress theme with responsive design for showing digital products, freebies similar to websites like freepik. Let your users upload images, content to your website and have their own author marketplace.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, four-columns, responsive-layout, featured-images, fixed-width-template, blogging, freebie
+Text Domain: platz
+    
+*/
+
 /*-------------------------*/
 /* SOCIAM FONT ICON "{{asset('font/socialico_plus-webfont.svg#socialico_plusregular')}}"
 /*-------------------------*/
@@ -918,4 +932,3 @@ body,html{
 .dropdown:hover .dropbtn {
     background-color: #99def8;
 }
-

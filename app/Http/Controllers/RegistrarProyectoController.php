@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
-use App\usuario;
-use Session;
-use App\usuarioPerfil;
-class UsuarioController extends Controller
+use App\categoria;
+use App\equipoemprendedor;
+
+class RegistrarProyectoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,8 @@ class UsuarioController extends Controller
      */
     public function index()
     {
+        
         //
-
     }
 
     /**
@@ -27,6 +26,10 @@ class UsuarioController extends Controller
      */
     public function create()
     {
+        $categoria = categoria::all();
+        //dd($categoria);
+        $equipoemprendedor = equipoemprendedor::all();
+        return view('PublicaProyecto/PublicaProyecto',compact('categoria','equipoemprendedor'));
         //
     }
 
@@ -84,21 +87,5 @@ class UsuarioController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function ActionIndex()
-    {        
-        if($_POST)
-        {
-            //dd(Input::get('Nombre'));
-            $usuario = usuario::where('nick','=',Input::get('Nombre'))->where('password','=',Input::get('Password'))->get()->first();
-            $id= $usuario->idUsuario;
-            session(['InicioSesion' => $id]);
-            //session()->set('IncioSesion',$id);
-            //dd(Session::get('InicioSesion', 'caca'));
-            return redirect()->action('InicioController@create');;
-            
-        }
-        
     }
 }
