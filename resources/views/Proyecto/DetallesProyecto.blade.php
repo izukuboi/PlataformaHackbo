@@ -1162,6 +1162,61 @@ textarea {
 
 }
 
+/*----------------------------*/
+/* Dropdown Menu */
+/*----------------------------*/	
+
+/* Style The Dropdown Button */
+.dropbtn {
+	font-family: 'Roboto',sans-serif;
+    background-color: #0cbdff;
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	font-family: 'Roboto',sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #0cbdff}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #99def8;
+}
+
 
 
 </style>
@@ -1179,16 +1234,14 @@ textarea {
 
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Sobre Nosotros</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Como Funcionamos</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Contactanos</div></a>
-        </div>
-		<!--<div class="logo"><img src="img/logo-burst.png" alt="logo platz" height="60" width="90"></div>-->
+     <div class="dropdown">
+<button class="dropbtn">INFORMATE</button>	
+  <div class="dropdown-content">
+    <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
+    <a href="#">Como Funcionamos</a>
+    <a href="#">Contactanos</a>
+  </div>
+</div> 
 	</div>
         <div id="stripes"></div>
 </div>

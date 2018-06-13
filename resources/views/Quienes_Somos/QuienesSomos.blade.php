@@ -28,16 +28,14 @@
 
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-        <div id="wrapper-title-2">
-            <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Como Funcionamos</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Contactanos</div></a>
-        </div>
-		<!--<div class="logo"><img src="img/logo-burst.png" alt="logo platz" height="60" width="90"></div>-->
+        <div class="dropdown">
+<button class="dropbtn">INFORMATE</button>  
+  <div class="dropdown-content">
+    <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
+    <a href="#">Como Funcionamos</a>
+    <a href="#">Contactanos</a>
+  </div>
+</div> 
 	</div>
         <div id="stripes"></div>
     </div>
@@ -252,25 +250,19 @@
 		<div class="container-footer">
 
             <div id="row-1f">
-            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Platz is a blog showcasing hand-picked free themes, design stuff, free fonts and other resources for web designers.</div>
+              <div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Somos una plataforma web con la intencios de ayudar a los emprendedores que no saben donde publicar sus proyectos.</div>
             </div>
 
             <div id="row-2f">
-            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Platz offers you all the latest freebies found all over the fourth corners without to pay.</div>
+              <div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Solo nesecitas que tengas una buena idea.</div>
             </div>
 
             <div id="row-3f">
-            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Get in touch!</span><br>Subscribe our RSS or follow us on Facebook, Google+, Pinterest or Dribbble to keep updated.</div>
+              <div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Siguenos!</span><br>Puede seguirnos en facebook.</div>
             </div>
 
             <div id="row-4f">
-            	<div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Newsletter</span><br>You will be informed monthly about the latest content avalaible.</div>
-
-				<div id="main_tip_newsletter">
-					<form>
-						<input type="text" name="newsletter" id="tip_newsletter_input" list="newsletter" autocomplete=off required>
-					</form>
-				</div>
+              <div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Newsletter</span><br>You will be informed monthly about the latest content avalaible.</div>
             </div>
 
 		</div>
