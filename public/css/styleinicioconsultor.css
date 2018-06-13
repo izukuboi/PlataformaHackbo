@@ -1,3 +1,4 @@
+
 /*-------------------------*/
 /* SOCIAM FONT ICON "{{asset('font/socialico_plus-webfont.svg#socialico_plusregular')}}"
 /*-------------------------*/
@@ -853,11 +854,11 @@ body,html{
 		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
 	}
 
-	.social ul li .icon-pushpin {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-	.social ul li .icon-pushpin {background: #00abf0;}
-	.social ul li .icon-pushpin {background: #d95232;}
-	.social ul li .icon-pinterest {background: #ae181f;}
-	.social ul li .icon-mail {background: #666666;}
+	.social ul li .icon-profile{background:#2e86c1 ;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-briefcase{background:  #0cbdff;}
+	.social ul li .icon-search{background: #99def8;}
+	.social ul li .icon-coin-dollar{background: #d6eaf8;}
+	.social ul li .icon-user-plus {background: #b3b6b7;}
 
 	.social ul li a:hover {
 		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
@@ -918,4 +919,3 @@ body,html{
 .dropdown:hover .dropbtn {
     background-color: #99def8;
 }
-
