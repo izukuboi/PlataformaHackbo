@@ -31,11 +31,14 @@ Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');
 
+Route::resource('Login', 'LoginController');
+
+
 Route::get('/', function () {
     return view('Inicio/pagReg');
 });
 Route::get('/prueba', function () {
-    return view('Proyecto/vistaproy');
+    return view('Inicio.InicioCliente');
 });
 
 Route::get('/Pruebalogin', function () {

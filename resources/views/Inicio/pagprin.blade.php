@@ -69,7 +69,7 @@
 		</div>
 		
 		<div id="wrapper-title-3">
-		<a href="#"><div class="oldies object">Ingresa</div></a>
+		<a href="{{action('LoginController@create')}}"><div class="oldies object">Ingresa</div></a>
 		</div>
 
 		<div id="wrapper-title-3">

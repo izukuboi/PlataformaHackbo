@@ -45,6 +45,7 @@ class ConsultorController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request->NombreUsuario);
         $consultor = new consultor;
         $persona = new persona;
         $user = new usuario;
@@ -63,19 +64,20 @@ class ConsultorController extends Controller
         $consultor->tarifaConsultoria = $request->TarifaConsultoria;
         $consultor->descripcion = $request->Descripcion;
         $consultor->save();
-
+        
         $user->idUsuario = $persona->id;
         $user->nick = $request->NombreUsuario;
         $user->password = $request->Password;
         $user->fechaRegistro = new DateTime();
         $user->tipoCuenta = 'Free';
         $user->save();
+        //dd($user);
 
         $userp->idUsuario = $persona->id;
         $userp->idPerfil = $perfilCon->idPerfil;
         $userp->save();
 
-        return redirect()->action('ConsultorController@create');
+        return redirect()->action('LoginController@create');
     }
 
     /**

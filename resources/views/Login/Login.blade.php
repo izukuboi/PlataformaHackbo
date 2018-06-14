@@ -22,7 +22,7 @@
 
 
 		<p class="center-content">
-			<input type="submit" class="btn btn-green" name= "boton_registrar" value="Registrar">
+			<input type="submit" class="btn btn-green" name= "boton_registrar" value="Ingresar">
 		</p>
 	</div>
 
