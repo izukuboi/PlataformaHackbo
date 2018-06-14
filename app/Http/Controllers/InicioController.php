@@ -23,36 +23,36 @@ class InicioController extends Controller
         $consultor = new consultor;
         $cliente = new cliente;
         $emprendor = new emprendedor;
-        if($patrocinador->where('idPatrocinador',Session::get('InicioSesion','caca'))->exists())
+        if($patrocinador->where('idPatrocinador',Session::get('InicioSesion',0))->exists())
         {   
             return view('Inicio/InicioPatrocinador',compact('proyecto'));
         }
         else
         {
-            if($consultor->where('idConsultor',Session::get('InicioSesion','caca'))->exists())
+            if($consultor->where('idConsultor',Session::get('InicioSesion',0))->exists())
             {   
                 return view('Inicio/InicioConsultor',compact('proyecto'));
             }
             else
             {
-                if($cliente->where('idCliente',Session::get('InicioSesion','caca'))->exists())
+                if($cliente->where('idCliente',Session::get('InicioSesion',0))->exists())
                 {   
                     return view('Inicio/InicioCliente',compact('proyecto'));
                 }
                 else
                 {
-                    if($cliente->where('idEmprendedor',Session::get('InicioSesion','caca'))->exists())
+                    if($emprendor->where('idEmprendedor',Session::get('InicioSesion',0))->exists())
                     {   
                         return view('Inicio/InicioEmprendedor',compact('proyecto'));
                     }
                     else
                     {
-                        echo 'nani';
+                        return view('Inicio/pagprin',compact('proyecto'));
                     }
                 }
             }
         }
 
-        //return view('Inicio/pagprin',compact('proyecto'));
+        
     }
 }
