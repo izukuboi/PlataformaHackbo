@@ -22,9 +22,9 @@
 
 <div class="social">
 	<ul>
-		<li><a href="" class="icon-profile"></a></li><!-- Perfil -->
-		<li><a href="" class="icon-cart"></a></li><!-- Buscar Proyectos -->
-		<li><a href="" class="icon-credit-card"></a></li><!-- Compras -->
+		<li><a href="" class="icon-profile" alt="Perfil" title="Perfil" height="28" width="28"></a></li><!--Perfil-->
+		<li><a href="" class="icon-cart" alt="BuscarProyectos" title="Buscar Proyectos" height="28" width="28"></a></li><!-- Buscar Proyectos -->
+		<li><a href="" class="icon-credit-card" alt="Compras" title="Compras" height="28" width="28"></a></li><!-- Compras -->
 	</ul>
 </div>
 
