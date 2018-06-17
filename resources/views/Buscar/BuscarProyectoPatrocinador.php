@@ -4,19 +4,30 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Pagina Principal</title>
+<title>Pagina Principal Protrocinador</title>
 
 <!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="{{asset('image/png')}}" href="{{asset('img/small-logo-01.png')}}">
+    <link rel="icon" type="image/png" href="img/small-logo-01.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href="{{asset('css/style.css')}}" rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/styleiniciopatrocinador.css')}}" rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/fonts.css')}}" rel='stylesheet'>
+	
 
 </head>
 
 <body>
+
+<div class="social">
+	<ul>
+		<li><a href="" class="icon-profile"></a></li><!-- Perfil -->
+		<li><a href="" class="icon-briefcase"></a></li><!-- Mis Proyectos -->
+		<li><a href="" class="icon-search"></a></li><!-- Buscar Consultores -->
+		<li><a href="" class="icon-coin-dollar"></a></li><!-- Mis Finanzas -->
+	</ul>
+</div>
 
 <a name="ancre"></a>
 
@@ -27,48 +38,50 @@
 
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-		<div class="dropdown">
-<button class="dropbtn">INFORMATE</button>	
+       <!--	<div id="wrapper-title-2">
+            <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
+        </div>-->
+<div class="dropdown">
+  <button class="dropbtn">INFORMATE</button>
   <div class="dropdown-content">
     <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
     <a href="#">Como Funcionamos</a>
     <a href="#">Contactanos</a>
   </div>
 </div> 
-		</div>
+	</div>
         <div id="stripes"></div>
     </div>
-</div>
-
 <!-- NAVBAR -->
 
 <div id="wrapper-navbar">
-		<div class="navbar object navbar-info">
-    		<div id="wrapper-sorting">
-            <div id="wrapper-title-1">
-            <div class="top-rated object">Registrate</div>
-            	<div id="fleche-nav-1"></div>
-    		</div>
+	<div class="navbar object navbar-info">
+		<div id="wrapper-sorting">
+	   <div id="wrapper-title-1">
+		<div class="top-rated object">Busca Proyectos</div>
+		</div>
+		
+		<div id="wrapper-title-2">
+		<a href="{{action('RegistroController@create')}}"><div class="recent object">Registrate</div></a>
+		</div>
+		
+		<div id="wrapper-title-3">
+		<a href="{{action('LoginController@create')}}"><div class="oldies object">Ingresa</div></a>
+		</div>
 
-            <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Sobre Nosotros</div></a>
-                <div id="fleche-nav-2"></div>
-    		</div>
-
-            <div id="wrapper-title-3">
-            <a href="#"><div class="oldies object">Oldies</div></a>
-                <div id="fleche-nav-3"></div>
-    		</div>
-            </div>
-            <div id="wrapper-bouton-icon">
-            	<div id="bouton-ai"><img src="{{asset('img/icon-ai.svg')}}" alt="illustrator" title="Illustrator" height="28" width="28"></div>
-            	<div id="bouton-psd"><img src="{{asset('img/icon-psd.svg')}}" alt="photoshop" title="Photoshop" height="28" width="28"></div>
-            	<div id="bouton-theme"><img src="{{asset('img/icon-themes.svg')}}" alt="theme" title="Theme" height="28" width="28"></div>
-            	<div id="bouton-font"><img src="{{asset('img/icon-font.svg')}}" alt="font" title="Font" height="28" width="28"></div>
-            	<div id="bouton-photo"><img src="{{asset('img/icon-photo.svg')}}" alt="photo" title="Photo" height="28" width="28"></div>
-            	<div id="bouton-premium"><img src="{{asset('img/icon-premium.svg')}}" alt="premium" title="Premium" height="28" width="28"></div>
-			</div>
-    	</div>
+		<div id="wrapper-title-3">
+		<a href="#"><div class="oldies object">Publica un Proyecto</div></a>
+		</div>
+		</div>
+		<div id="wrapper-bouton-icon">
+			<div id="bouton-ai"><img src="{{asset('img/icon-ai.svg')}}" alt="illustrator" title="Illustrator" height="28" width="28"></div>
+			<div id="bouton-psd"><img src="{{asset('img/icon-psd.svg')}}" alt="photoshop" title="Photoshop" height="28" width="28"></div>
+			<div id="bouton-theme"><img src="{{asset('img/icon-themes.svg')}}" alt="theme" title="Theme" height="28" width="28"></div>
+			<div id="bouton-font"><img src="{{asset('img/icon-font.svg')}}" alt="font" title="Font" height="28" width="28"></div>
+			<div id="bouton-photo"><img src="{{asset('img/icon-photo.svg')}}" alt="photo" title="Photo" height="28" width="28"></div>
+			<div id="bouton-premium"><img src="{{asset('img/icon-premium.svg')}}" alt="premium" title="Premium" height="28" width="28"></div>
+		</div>
+	</div>
     </div>
 
 
@@ -182,19 +195,25 @@
 		<div class="container-footer">
 
             <div id="row-1f">
-            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Somos una plataforma web con la intencios de ayudar a los emprendedores que no saben donde publicar sus proyectos.</div>
+            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Platz is a blog showcasing hand-picked free themes, design stuff, free fonts and other resources for web designers.</div>
             </div>
 
             <div id="row-2f">
-            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Solo nesecitas que tengas una buena idea.</div>
+            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Platz offers you all the latest freebies found all over the fourth corners without to pay.</div>
             </div>
 
             <div id="row-3f">
-            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Siguenos!</span><br>Puede seguirnos en facebook.</div>
+            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Get in touch!</span><br>Subscribe our RSS or follow us on Facebook, Google+, Pinterest or Dribbble to keep updated.</div>
             </div>
 
             <div id="row-4f">
             	<div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Newsletter</span><br>You will be informed monthly about the latest content avalaible.</div>
+
+				<div id="main_tip_newsletter">
+					<form>
+						<input type="text" name="newsletter" id="tip_newsletter_input" list="newsletter" autocomplete=off required>
+					</form>
+				</div>
             </div>
 
 		</div>
@@ -219,11 +238,11 @@
 
 
 <!-- SCRIPT -->
-
+<!-- "{{asset('js/main.js')}}"-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{asset('js/jquery.scrollTo.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/jquery.localScroll.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/jquery-animate-css-rotate-scale.js')}}"></script>
+    <script type="text/javascript" src= "{{asset('js/jquery-animate-css-rotate-scale.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/fastclick.min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/jquery.animate-colors-min.js')}}"></script>
 	<script type="text/javascript" src="{{asset('js/jquery.animate-shadow-min.js')}}"></script>
@@ -258,7 +277,7 @@ function preloader() {
 		var img18 = new Image();
 		var img19 = new Image();
 		var img20 = new Image();
-
+		//"{{asset('img/theme-4.jpg')}}"-->
 		img1.src = "{{asset('img/psd-4.jpg')}}";
 		img2.src = "{{asset('img/font-1.jpg')}}";
 		img3.src = "{{asset('img/psd-1.jpg')}}";
