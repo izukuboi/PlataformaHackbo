@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="img/small-logo-01.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href="{{asset('css/styleiniciopatrocinador.css')}}" rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/styleinicioconsultor.css')}}" rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/fonts.css')}}" rel='stylesheet'>
 	
 
@@ -26,6 +26,7 @@
 		<li><a href="" class="icon-briefcase"></a></li><!-- Mis Proyectos -->
 		<li><a href="" class="icon-search"></a></li><!-- Buscar Proyectos -->
 		<li><a href="" class="icon-coin-dollar"></a></li><!-- Mis Finanzas -->
+		<li><a href="" class="icon-user-plus"></a></li><!-- Solicitud -->
 	</ul>
 </div>
 
