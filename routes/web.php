@@ -12,21 +12,21 @@
 */
 Route::resource('cliente','ClienteController');
 
-Route::resource('Inicio', 'InicioController');
+Route::resource('inicio', 'InicioController');
 
-Route::resource('Registro','RegistroController');
+Route::resource('registro','RegistroController');
 
-Route::resource('QuienesSomos', 'QuienesSomosController');
+Route::resource('quienessomos', 'QuienesSomosController');
 
-Route::resource('RegistrarProyecto', 'RegistrarProyectoController');
-Route::resource('Proyecto', 'ProyectoController');
+Route::resource('registrarproyecto', 'RegistrarProyectoController');
+Route::resource('proyecto', 'ProyectoController');
 
 Route::any('/usuario', 'UsuarioController@ActionIndex');
 
 //Route::resource('/usuario/c','UsuarioController');
 
 
-Route::resource('PublicaProyecto', 'PublicaProyectoController');
+Route::resource('publicaproyecto', 'PublicaProyectoController');
 Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');
