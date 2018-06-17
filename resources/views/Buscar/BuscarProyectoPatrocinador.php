@@ -4,7 +4,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Buscar Proyecto</title>
+<title>Pagina Principal Protrocinador</title>
 
 <!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -24,7 +24,7 @@
 	<ul>
 		<li><a href="" class="icon-profile"></a></li><!-- Perfil -->
 		<li><a href="" class="icon-briefcase"></a></li><!-- Mis Proyectos -->
-		<li><a href="" class="icon-search"></a></li><!-- Buscar Proyectos -->
+		<li><a href="" class="icon-search"></a></li><!-- Buscar Consultores -->
 		<li><a href="" class="icon-coin-dollar"></a></li><!-- Mis Finanzas -->
 	</ul>
 </div>
