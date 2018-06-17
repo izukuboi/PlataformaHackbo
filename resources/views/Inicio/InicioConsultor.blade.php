@@ -22,11 +22,11 @@
 
 <div class="social">
 	<ul>
-		<li><a href="" class="icon-profile"></a></li><!-- Perfil -->
-		<li><a href="" class="icon-briefcase"></a></li><!-- Mis Proyectos -->
-		<li><a href="" class="icon-search"></a></li><!-- Buscar Proyectos -->
-		<li><a href="" class="icon-coin-dollar"></a></li><!-- Mis Finanzas -->
-		<li><a href="" class="icon-user-plus"></a></li><!-- Solicitud -->
+		<li><a href="" class="icon-profile" alt="Perfil" title="Perfil" height="28" width="28"></a></li><!-- Perfil -->
+		<li><a href="" class="icon-briefcase" alt="MisProyectos" title="Mis Proyectos" height="28" width="28"></a></li><!-- Mis Proyectos -->
+		<li><a href="" class="icon-search" alt="BuscarProyectos" title="Buscar Proyectos" height="28" width="28"></a></li><!-- Buscar Proyectos -->
+		<li><a href="" class="icon-coin-dollar" alt="MisFinanzas" title="Mis Finanzas" height="28" width="28"></a></li><!-- Mis Finanzas -->
+		<li><a href="" class="icon-user-plus" alt="Solicitud" title="Solicitud" height="28" width="28"></a></li><!-- Solicitud -->
 	</ul>
 </div>
 
