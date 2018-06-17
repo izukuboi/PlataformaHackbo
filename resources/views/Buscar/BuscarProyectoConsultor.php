@@ -4,7 +4,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Pagina Principal Protrocinador</title>
+<title>Buscar Proyecto</title>
 
 <!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="img/small-logo-01.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href="{{asset('css/styleiniciopatrocinador.css')}}" rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/styleinicioconsultor.css.css')}}" rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/fonts.css')}}" rel='stylesheet'>
 	
 
@@ -24,7 +24,7 @@
 	<ul>
 		<li><a href="" class="icon-profile"></a></li><!-- Perfil -->
 		<li><a href="" class="icon-briefcase"></a></li><!-- Mis Proyectos -->
-		<li><a href="" class="icon-search"></a></li><!-- Buscar Proyectos -->
+		<li><a href="" class="icon-search"></a></li><!-- Buscar Proyecto -->
 		<li><a href="" class="icon-coin-dollar"></a></li><!-- Mis Finanzas -->
 	</ul>
 </div>
@@ -131,92 +131,42 @@
 
 	<div id="wrapper-container">
 
-		<!--<div class="container object">-->
+		<div class="container object">
 
 			<div id="main-container-image">
 
 					<section class="work">
+						<!-- <figure class="white">
+							<a href="#">
+								<img src="{{asset('img/psd-4.jpg')}}" alt="" />
+								<dl>
+									<dt>Pied Piper</dt>
+									<dd>Una red autónoma punto a punto que presenta almacenamiento distribuido con tecnología de compresión universal, asignación acelerada de programación y encriptación de extremo a extremo.</dd>
+								</dl>
+							</a>
+                            <div id="wrapper-part-info">
+                            	<div class="part-info-image"><img src="https://ih0.redbubble.net/image.56249417.4683/flat,800x800,075,t.u2.jpg" alt="" width="28" height="28"/></div>
+                            	<div id="part-info">Pied Piper</div>
+							</div>
+						</figure> -->
+						@foreach ($proyecto as $p)
+						<figure class="white">
+							<a href="{{ action('ProyectoController@show' , $p -> idProyecto )}}">
+								<img src="{{asset('img/psd-4.jpg')}}" alt="" />
+								<dl>
+									<dt> {{$p -> nombre}} </dt>
 
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+									<dd> {{$p -> descripcion}}  </dd>
+								</dl>
+							</a>
+                            <div id="wrapper-part-info">
+                            	<!--<div class="part-info-image"><img src="https://ih0.redbubble.net/image.56249417.4683/flat,800x800,075,t.u2.jpg" alt="" width="28" height="28"/></div>-->
+                            	<div id="part-info"> {{$p -> nombre}}  </div>
+							</div>
+						</figure>
+						@endforeach
 
-            <!--<h2 class="w3-center">Mejores Proyectos</h2>-->
-			<!--- "{{asset('img/psd-3.jpg')}}"-->
-
-            <div class="w3-content w3-section" style="max-width:1000px">
-              <img class="mySlides" src="{{asset('img/1.jpg')}}" style="width:100%">
-              <img class="mySlides" src="{{asset('img/2.jpg')}}" style="width:100%">
-              <img class="mySlides" src="{{asset('img/3.jpg')}}" style="width:100%">
-            </div>
-
-            <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}
-              x[myIndex-1].style.display = "block";
-              setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-            </script>
-
-						<div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
-	 <h2 class="w3-wide">Emprende Ayuda</h2>
-	 <p class="w3-opacity"><i>Crea Patrocina Compra</i></p>
-	 <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-		 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-		 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
- </div>
- <!-- The Tour Section -->
- <!--- "{{asset('img/psd-1.jpg')}}"-->
-   <div class="w3-blue" id="tour">
-     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-       <h2 class="w3-wide w3-center">Top Proyectos</h2>
-       	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-				@foreach($proyecto as $p)
-         	<div class="w3-third w3-margin-bottom">
-           <img src="{{asset('img/psd-1.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
-           <div class="w3-container w3-white">
-			 <p><b>{{$p -> nombre }}</b></p>
-			 	
-			 <p class="w3-opacity">{{$p -> fechaFinal }}</p>
-			 
-			 <p>{{$p -> descripcion }}</p>
-			 
-              <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
-           </div>
-				 </div>
-				 {{--
-         <div class="w3-third w3-margin-bottom">
-           <img src="{{asset('img/psd-1.jpg')}}" alt="Paris" style="width:100%" class="w3-hover-opacity">
-           <div class="w3-container w3-white">
-             <p><b>Proyecto 2</b></p>
-             <p class="w3-opacity">Fecha</p>
-             <p>Descripcion</p>
-             <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
-           </div>
-         </div>
-         <div class="w3-third w3-margin-bottom">
-           <img src="{{asset('img/psd-1.jpg')}}" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-           <div class="w3-container w3-white">
-             <p><b>Proyecto 3</b></p>
-             <p class="w3-opacity">Fecha</p>
-             <p>Descripcion</p>
-             <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
-		   </div> --}}
-				
-		   @endforeach
-         </div>
-       </div>
-     </div>
-   </div>
+			
 
 					</section>
 
