@@ -3,16 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\patrocinador;
-use App\persona;
-use App\pais;
-use App\usuario;
-use App\usuarioPerfil;
-use App\perfil;
-use DB;
-use DateTime;
-
-class PatrocinadorController extends Controller
+use App\proyecto;
+use App\equipoemprendedor;
+use App\categoria;
+class ProyectoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,8 +25,9 @@ class PatrocinadorController extends Controller
      */
     public function create()
     {
-        $pais = pais::all();
-        return view('Patrocinador/RegistrarPatrocinador',compact('pais'));
+        $proyecto = proyecto::all();
+        return view('Proyecto/vistaproy', compact('proyecto'));
+        
     }
 
     /**
@@ -43,36 +38,7 @@ class PatrocinadorController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
-        $patrocinador = new patrocinador;
-        $persona = new persona;
-        $user = new usuario;
-        $userp = new usuarioPerfil;
-        $perfilPatrocinador = perfil::where('nombrePerfil','=','Patrocinador')->get()->first();
-
-        $persona->nombre = $request->Nombre;
-        $persona->apellido = $request->Apellido;
-        $persona->idPais = $request->Pais;
-        $persona->email = $request->Email;
-        $persona->save();
-        //dd($persona);
-        $patrocinador->idPatrocinador = $persona->id;
-        $patrocinador->nombreEmpresa = $request->Empresa;
-        $patrocinador->save();
-
-        $user->idUsuario = $persona->id;
-        $user->nick = $request->NombreUsuario;
-        $user->password = $request->Password;
-        $user->fechaRegistro = new DateTime();
-        $user->tipoCuenta = 'Free';
-        $user->save();
-
-        $userp->idUsuario = $persona->id;
-        $userp->idPerfil = $perfilPatrocinador->idPerfil;
-        $userp->save();
-
-        return redirect()->action('LoginController@create');
-
+        //
     }
 
     /**
@@ -83,7 +49,14 @@ class PatrocinadorController extends Controller
      */
     public function show($id)
     {
-        //
+        
+        $proyecto =  proyecto::where('idProyecto','=',$id)->get()->first();
+        //dd($proyecto);
+       
+        $equipoemprendedor = equipoemprendedor::where('idEquipoEmprendedor','=',$proyecto->idEquipoEmprendedor)->get()->first();
+        $categoria = categoria::where('idCategoria','=',$proyecto->idCategoria)->get()->first();
+        return view('Proyecto/DetallesProyecto',compact('proyecto','equipoemprendedor','categoria'));
+        
     }
 
     /**

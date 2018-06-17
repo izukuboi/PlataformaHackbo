@@ -1,17 +1,3 @@
-/*
-Theme Name: Platz
-Theme URI: 
-Author: Dcrazed
-Author URI: https://dcrazed.com/
-Description: Platz is a free grid wordpress theme with responsive design for showing digital products, freebies similar to websites like freepik. Let your users upload images, content to your website and have their own author marketplace.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: white, four-columns, responsive-layout, featured-images, fixed-width-template, blogging, freebie
-Text Domain: platz
-    
-*/
-
 /*-------------------------*/
 /* SOCIAM FONT ICON "{{asset('font/socialico_plus-webfont.svg#socialico_plusregular')}}"
 /*-------------------------*/
@@ -135,7 +121,7 @@ body,html{
 	width:27px;
 	height:20px;
 	right:15px;
-	top:22.5px;
+	top:210.5px;
 	cursor:pointer;
 	display:none;
 }
@@ -839,5 +825,97 @@ body,html{
  
 @media only screen and (max-width: 320px) {
 
+}
+
+/*----------------------------*/
+/* Barra de la Derecha */
+/*----------------------------*/
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-pushpin {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-pushpin {background: #00abf0;}
+	.social ul li .icon-pushpin {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+/*----------------------------*/
+/* Dropdown Menu */
+/*----------------------------*/	
+
+/* Style The Dropdown Button */
+.dropbtn {
+	font-family: 'Roboto',sans-serif;
+    background-color: #0cbdff;
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	font-family: 'Roboto',sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #0cbdff}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #99def8;
 }
 

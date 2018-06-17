@@ -4,7 +4,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Principal</title>
+<title>Pagina Principal Emprendedor</title>
 
 <!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -12,21 +12,22 @@
     <link rel="icon" type="image/png" href="img/small-logo-01.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href="{{asset('css/stylepagprin.css')}}" rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/styleinicioemprendedor.css')}}" rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/fonts.css')}}" rel='stylesheet'>
-
+	
 
 </head>
 
 <body>
 
-<!--<div class="social">
+<div class="social">
 	<ul>
-		<li><a href="" class="icon-pushpin"></a></li>
-		<li><a href="" class="icon-pushpin"></a></li>
-		<li><a href="" class="icon-pushpin"></a></li>
+		<li><a href="" class="icon-profile"></a></li><!-- Perfil -->
+		<li><a href="" class="icon-briefcase"></a></li><!-- Mis Proyectos -->
+		<li><a href="" class="icon-bubbles3"></a></li><!-- Buscar Consultores -->
+		<li><a href="" class="icon-coin-dollar"></a></li><!-- Mis Finanzas -->
 	</ul>
-</div>-->
+</div>
 
 <a name="ancre"></a>
 
@@ -34,24 +35,20 @@
 <div class="cache"></div>
 
 <!-- HEADER -->
-<div class="w3-jumbo">
-		<a href="{{action('InicioController@create')}}"<b> Emprende Ayuda!</b> </a>
-</div>
-<div id="wrapper-header">
 
+<div id="wrapper-header">
 	<div id="main-header" class="object">
        <!--	<div id="wrapper-title-2">
             <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
-		</div>-->
-
+        </div>-->
 <div class="dropdown">
-<button class="dropbtn">INFORMATE</button>
+  <button class="dropbtn">INFORMATE</button>
   <div class="dropdown-content">
     <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
     <a href="#">Como Funcionamos</a>
     <a href="#">Contactanos</a>
   </div>
-</div>
+</div> 
 	</div>
         <div id="stripes"></div>
     </div>
@@ -61,20 +58,19 @@
 	<div class="navbar object navbar-info">
 		<div id="wrapper-sorting">
 	   <div id="wrapper-title-1">
-		<div class="top-rated object"></div>
-		<a href="{{action('ProyectoController@create')}}"><div class="recent object">Busca Proyectos</div></a>
+		<div class="top-rated object">Busca Proyectos</div>
 		</div>
+		
 		<div id="wrapper-title-2">
 		<a href="{{action('RegistroController@create')}}"><div class="recent object">Registrate</div></a>
 		</div>
-
+		
 		<div id="wrapper-title-3">
-		<a href="{{action('LoginController@create')}}"><div class="oldies object">Ingresa</div></a>
+		<a href="#"><div class="oldies object">Ingresa</div></a>
 		</div>
 
 		<div id="wrapper-title-3">
-		<a href="{{action('RegistrarProyectoController@create')}}"><div class="recent object">Publica un Proyecto</div></a>
-
+		<a href="#"><div class="oldies object">Publica un Proyecto</div></a>
 		</div>
 		</div>
 		<div id="wrapper-bouton-icon">
@@ -148,7 +144,7 @@
 			<!--- "{{asset('img/psd-3.jpg')}}"-->
 
             <div class="w3-content w3-section" style="max-width:1000px">
-              <img class="mySlides" src="{{asset('img/portadainicio.jpg')}}" style="width:100%">
+              <img class="mySlides" src="{{asset('img/1.jpg')}}" style="width:100%">
               <img class="mySlides" src="{{asset('img/2.jpg')}}" style="width:100%">
               <img class="mySlides" src="{{asset('img/3.jpg')}}" style="width:100%">
             </div>
@@ -189,11 +185,11 @@
            <img src="{{asset('img/psd-1.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
            <div class="w3-container w3-white">
 			 <p><b>{{$p -> nombre }}</b></p>
-
+			 	
 			 <p class="w3-opacity">{{$p -> fechaFinal }}</p>
-
+			 
 			 <p>{{$p -> descripcion }}</p>
-
+			 
               <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
            </div>
 				 </div>
@@ -215,7 +211,7 @@
              <p>Descripcion</p>
              <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
 		   </div> --}}
-
+				
 		   @endforeach
          </div>
        </div>
@@ -249,19 +245,25 @@
 		<div class="container-footer">
 
             <div id="row-1f">
-            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Somos una plataforma web con la intencios de ayudar a los emprendedores que no saben donde publicar sus proyectos.</div>
+            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Platz is a blog showcasing hand-picked free themes, design stuff, free fonts and other resources for web designers.</div>
             </div>
 
             <div id="row-2f">
-            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Solo nesecitas que tengas una buena idea.</div>
+            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Platz offers you all the latest freebies found all over the fourth corners without to pay.</div>
             </div>
 
             <div id="row-3f">
-            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Siguenos!</span><br>Puede seguirnos en facebook.</div>
+            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Get in touch!</span><br>Subscribe our RSS or follow us on Facebook, Google+, Pinterest or Dribbble to keep updated.</div>
             </div>
 
             <div id="row-4f">
             	<div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Newsletter</span><br>You will be informed monthly about the latest content avalaible.</div>
+
+				<div id="main_tip_newsletter">
+					<form>
+						<input type="text" name="newsletter" id="tip_newsletter_input" list="newsletter" autocomplete=off required>
+					</form>
+				</div>
             </div>
 
 		</div>

@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="img/small-logo-01.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href="{{asset('css/stylepagprin.css')}}" rel='stylesheet' type='text/css'>
+	<link href="{{asset('css/stylecontactanos.css')}}" rel='stylesheet' type='text/css'>
 	
 
 </head>
@@ -28,14 +28,16 @@
 
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-        <div class="dropdown">
-<button class="dropbtn">INFORMATE</button>  
-  <div class="dropdown-content">
-    <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
-    <a href="#">Como Funcionamos</a>
-    <a href="#">Contactanos</a>
-  </div>
-</div> 
+        <div id="wrapper-title-2">
+            <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
+        </div>
+        <div id="wrapper-title-2">
+            <a href="#"><div class="recent object">Como Funcionamos</div></a>
+        </div>
+        <div id="wrapper-title-2">
+            <a href="#"><div class="recent object">Contactanos</div></a>
+        </div>
+		<!--<div class="logo"><img src="img/logo-burst.png" alt="logo platz" height="60" width="90"></div>-->
 	</div>
         <div id="stripes"></div>
     </div>
@@ -59,7 +61,7 @@
             </div>
 
             <div id="wrapper-title-3">
-            <a href="{{action('RegistrarProyectoController@create')}}"><div class="recent object">Publica un Proyecto</div></a>
+            <a href="#"><div class="oldies object">Publica un Proyecto</div></a>
             </div>
             </div>
             <div id="wrapper-bouton-icon">
@@ -129,96 +131,52 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-            <!--<h2 class="w3-center">Mejores Proyectos</h2>-->
-			<!--- "{{asset('img/psd-3.jpg')}}"-->
-	<div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
-	   <h2 class="w3-wide">Que Hacemos</h2>
-	   <p class="w3-justify">Como Bolivia va creciendo y desarrollandose muchos estudiantes, catedraticos, universitarios, trabajadores, etc..
-        Ocurre algo curioso, la gente se ha dado cuenta que se necesita generar nuevas ideas para mantener vivo al mundo en el que estamos y por tanto una cresca como ser humano.
-        Puede que suene bonito todo esto, pero existe un pequeño problema que vamos hacer con tantas ideas, algunas de las ideas pueden llegar hacerte millonario, otras llevarte a un buen trabajo, otras ideas quizas no sean tan buenas pero es por que nadie te ah escuchado o quizas solo neseceties un poco de ayuda para mejorar tu idea que tienes en mente y haci lograr una meta en la vida que es ser exitoso en ella. 
-        </p>
-    </div>
-    <div class="w3-content w3-section" style="max-width:100%">
-              <img class="mySlides" src="{{asset('img/quienessomos1.jpg')}}" style="width:100%">
-              <!--<img class="mySlides" src="{{asset('img/psd-4.jpg')}}" style="width:100%">
-              <img class="mySlides" src="{{asset('img/psd-3.jpg')}}" style="width:100%">-->
-            </div>
+            <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+              <h2 class="w3-center">Contactanos</h2>
+               
+              <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+                  </div>
+              </div>
+              
+              <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+                  </div>
+              </div>
+              
+              <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+                  </div>
+              </div>
+              
+              <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+                  </div>
+              </div>
+              
+              <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+                  </div>
+              </div>
+              
+              <p class="w3-center">
+              <button class="w3-button w3-section w3-blue w3-ripple"> Enviar </button>
+              </p>
+              </form>
 
-            <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}
-              x[myIndex-1].style.display = "block";
-              setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-            </script>
-<!-- Sobre Nosotros -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-       <div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
-       <h2 class="w3-wide">Sobre Nosotros</h2>
-       <p class="w3-center">Somos un grupo de jóvenes desarroladores con ganas de cambiar el mundo.
-        </p>
-        <p class="w3-center">Muy cliché? Totalmente. Cierto? También.
-        </p>
-    </div>   
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="{{asset('img/themoneitor.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Ricardo "Richi" Cuellar</b></p>
-            <p class="w3-opacity">"Todos me tiran un saving throw de percepción"</p>
-            <p>Web development Extraordinary</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Contacto</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="{{asset('img/marconi.jpg')}}" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Marco "The Last Airbender" Siñaniz </b></p>
-            <p class="w3-opacity">"Vos tranquilo yo nervioso"</p>
-            <p>Cooking Tutorials binge-watcher</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Contacto</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="{{asset('img/izuku.jpg')}}" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Isaac "Deku" Rodriguez </b></p>
-            <p class="w3-opacity">"omegalul"</p>
-            <p>Just below average Human</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Contacto</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 <br><br>
 
-<!-- Modal Correos -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-at w3-margin-right"></i>Correos</h2>
-      </header>
-      <div class="w3-container">
-        <p><label>jrichij@gmail.com</label></p>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -250,19 +208,25 @@
 		<div class="container-footer">
 
             <div id="row-1f">
-              <div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Somos una plataforma web con la intencios de ayudar a los emprendedores que no saben donde publicar sus proyectos.</div>
+            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Quienes somos?</span><br>Platz is a blog showcasing hand-picked free themes, design stuff, free fonts and other resources for web designers.</div>
             </div>
 
             <div id="row-2f">
-              <div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Solo nesecitas que tengas una buena idea.</div>
+            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Como funciona</span><br>Platz offers you all the latest freebies found all over the fourth corners without to pay.</div>
             </div>
 
             <div id="row-3f">
-              <div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Siguenos!</span><br>Puede seguirnos en facebook.</div>
+            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Get in touch!</span><br>Subscribe our RSS or follow us on Facebook, Google+, Pinterest or Dribbble to keep updated.</div>
             </div>
 
             <div id="row-4f">
-              <div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Newsletter</span><br>You will be informed monthly about the latest content avalaible.</div>
+            	<div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Newsletter</span><br>You will be informed monthly about the latest content avalaible.</div>
+
+				<div id="main_tip_newsletter">
+					<form>
+						<input type="text" name="newsletter" id="tip_newsletter_input" list="newsletter" autocomplete=off required>
+					</form>
+				</div>
             </div>
 
 		</div>

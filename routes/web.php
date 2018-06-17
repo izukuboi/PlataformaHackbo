@@ -18,12 +18,33 @@ Route::resource('Registro','RegistroController');
 
 Route::resource('QuienesSomos', 'QuienesSomosController');
 
+Route::resource('RegistrarProyecto', 'RegistrarProyectoController');
+Route::resource('Proyecto', 'ProyectoController');
 
+Route::any('/usuario', 'UsuarioController@ActionIndex');
+
+//Route::resource('/usuario/c','UsuarioController');
+
+
+Route::resource('PublicaProyecto', 'PublicaProyectoController');
 Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');
 
+Route::resource('Login', 'LoginController');
+
+
 Route::get('/', function () {
-    return view('Quienes_Somos/QuienesSomos');
+    return view('Inicio/pagReg');
+});
+Route::get('/prueba', function () {
+    return view('Inicio.InicioCliente');
 });
 
+Route::get('/Pruebalogin', function () {
+    return view('Login/Login');
+});
+
+Route::get('/PruebaAngel', function () {  /* Hubo cambios en esta partee!!! */
+    return view('Proyecto/DetallesProyecto');
+});
