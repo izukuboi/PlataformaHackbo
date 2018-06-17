@@ -71,7 +71,7 @@ class EmprendedorController extends Controller
         $userp->idPerfil = $perfilCli->idPerfil;
         $userp->save();
 
-        return 'Emprendedor '.$request->nombre.' registrado';
+        return redirect()->action('InicioController@create');
     }
 
     /**

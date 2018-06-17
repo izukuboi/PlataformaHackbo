@@ -77,7 +77,7 @@ class ConsultorController extends Controller
         $userp->idPerfil = $perfilCon->idPerfil;
         $userp->save();
 
-        return redirect()->action('LoginController@create');
+        return redirect()->action('InicioController@create');
     }
 
     /**

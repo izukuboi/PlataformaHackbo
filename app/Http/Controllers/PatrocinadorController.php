@@ -71,7 +71,7 @@ class PatrocinadorController extends Controller
         $userp->idPerfil = $perfilPatrocinador->idPerfil;
         $userp->save();
 
-        return redirect()->action('LoginController@create');
+        return redirect()->action('InicioController@create');
 
     }
 
