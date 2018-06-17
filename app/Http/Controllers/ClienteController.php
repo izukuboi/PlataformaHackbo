@@ -71,7 +71,7 @@ class ClienteController extends Controller
         $userp->idPerfil = $perfilCli->idPerfil;
         $userp->save();
 
-        return redirect()->action('ClienteController@create');
+        return redirect()->action('InicioController@create');
 
     }
 

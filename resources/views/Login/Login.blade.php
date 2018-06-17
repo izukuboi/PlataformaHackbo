@@ -10,7 +10,6 @@
 <body>
 	<form action="{{ action('UsuarioController@ActionIndex') }}" class = "form-login" method = "post">
 	{{ csrf_field() }}
-	prueba {{Session::get('InicioSesion','caca')}}
 		<h2>Ingresar</h2>
 
 	<div class= "contenedor-inputs"
@@ -18,7 +17,7 @@
 		<input type="text" class="field" name="Nombre" id="Nombre" required placeholder="Nombre Usuario"> <br/>
 
 		<p>Password:</p>
-		<input type="text" class="field" name="Password"  id="Password" required placeholder="Password Usuario"  > <br/>
+		<input type="password" class="field" name="Password"  id="Password" required placeholder="Password Usuario"  > <br/>
 
 
 		<p class="center-content">
