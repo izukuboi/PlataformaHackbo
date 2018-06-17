@@ -4,7 +4,7 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Pagina Principal Proyecto</title>
+<title>Pagina Principal</title>
 
 <!-- Behavioral Meta Data -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,7 +14,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/stylepagprin.css')}}" rel='stylesheet' type='text/css'>
 	<link href="{{asset('css/fonts.css')}}" rel='stylesheet'>
-	
+
 
 </head>
 
@@ -43,15 +43,15 @@
        <!--	<div id="wrapper-title-2">
             <a href="{{action('QuienesSomosController@create')}}"><div class="recent object">Quienes Somos</div></a>
 		</div>-->
-		
+
 <div class="dropdown">
-<button class="dropbtn">INFORMATE</button>	
+<button class="dropbtn">INFORMATE</button>
   <div class="dropdown-content">
     <a href="{{action('QuienesSomosController@create')}}">Quienes Somos</a>
     <a href="#">Como Funcionamos</a>
     <a href="#">Contactanos</a>
   </div>
-</div> 
+</div>
 	</div>
         <div id="stripes"></div>
     </div>
@@ -67,14 +67,14 @@
 		<div id="wrapper-title-2">
 		<a href="{{action('RegistroController@create')}}"><div class="recent object">Registrate</div></a>
 		</div>
-		
+
 		<div id="wrapper-title-3">
 		<a href="{{action('LoginController@create')}}"><div class="oldies object">Ingresa</div></a>
 		</div>
 
 		<div id="wrapper-title-3">
 		<a href="{{action('RegistrarProyectoController@create')}}"><div class="recent object">Publica un Proyecto</div></a>
-		
+
 		</div>
 		</div>
 		<div id="wrapper-bouton-icon">
@@ -189,11 +189,11 @@
            <img src="{{asset('img/psd-1.jpg')}}" alt="New York" style="width:100%" class="w3-hover-opacity">
            <div class="w3-container w3-white">
 			 <p><b>{{$p -> nombre }}</b></p>
-			 	
+
 			 <p class="w3-opacity">{{$p -> fechaFinal }}</p>
-			 
+
 			 <p>{{$p -> descripcion }}</p>
-			 
+
               <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
            </div>
 				 </div>
@@ -215,7 +215,7 @@
              <p>Descripcion</p>
              <button class="w3-button w3-light-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar</button>
 		   </div> --}}
-				
+
 		   @endforeach
          </div>
        </div>
