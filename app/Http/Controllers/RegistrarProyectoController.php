@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\categoria;
+use App\emprendedor;
+use Session;
 use App\equipoemprendedor;
 
 class RegistrarProyectoController extends Controller
@@ -26,6 +28,7 @@ class RegistrarProyectoController extends Controller
      */
     public function create()
     {
+
         $categoria = categoria::all();
         //dd($categoria);
         $equipoemprendedor = equipoemprendedor::all();

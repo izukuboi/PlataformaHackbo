@@ -51,18 +51,18 @@ class ClienteController extends Controller
         $userp = new usuarioPerfil;
         $perfilCli = perfil::where('nombrePerfil','=','Cliente')->get()->first();
 
-        $persona->nombre = $request->nombre;
-        $persona->apellido = $request->apellido;
-        $persona->idPais = $request->pais;
-        $persona->email = $request->email;
+        $persona->nombre = $request->Nombre;
+        $persona->apellido = $request->Apellido;
+        $persona->idPais = $request->Pais;
+        $persona->email = $request->Email;
         $persona->save();
         //dd($persona);
         $cliente->idCliente = $persona->id;
         $cliente->save();
 
         $user->idUsuario = $persona->id;
-        $user->nick = $request->nick;
-        $user->password = $request->password;
+        $user->nick = $request->NombreUsuario;
+        $user->password = $request->Password;
         $user->fechaRegistro = new DateTime();
         $user->tipoCuenta = 'Free';
         $user->save();
@@ -70,7 +70,7 @@ class ClienteController extends Controller
         $userp->idUsuario = $persona->id;
         $userp->idPerfil = $perfilCli->idPerfil;
         $userp->save();
-
+        //return 'oc';
         return redirect()->action('InicioController@create');
 
     }
