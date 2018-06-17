@@ -22,10 +22,10 @@
 
 <div class="social">
 	<ul>
-		<li><a href="" class="icon-profile"></a></li><!-- Perfil -->
-		<li><a href="" class="icon-briefcase"></a></li><!-- Mis Proyectos -->
-		<li><a href="" class="icon-bubbles3"></a></li><!-- Buscar Consultores -->
-		<li><a href="" class="icon-coin-dollar"></a></li><!-- Mis Finanzas -->
+		<li><a href="" class="icon-profile" alt="Perfil" title="Perfil" height="28" width="28"></a></li><!--Perfil-->
+		<li><a href="" class="icon-briefcase" alt="Mis Proyectos" title="MisProyectos" height="28" width="28"></a></li><!--MisProyectos -->
+		<li><a href="" class="icon-bubbles3" alt="Buscar Consultores" title="BuscarConsultores" height="28" width="28"></a></li><!-- Buscar Consultores -->
+		<li><a href="" class="icon-coin-dollar" alt="Mis Finanzas" title="MisFinanzas" height="28" width="28"></a></li><!-- Mis Finanzas -->
 	</ul>
 </div>
 
