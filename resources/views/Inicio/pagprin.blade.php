@@ -83,7 +83,8 @@
 			<div id="bouton-theme"><img src="{{asset('img/icon-themes.svg')}}" alt="theme" title="Theme" height="28" width="28"></div>
 			<div id="bouton-font"><img src="{{asset('img/icon-font.svg')}}" alt="font" title="Font" height="28" width="28"></div>
 			<div id="bouton-photo"><img src="{{asset('img/icon-photo.svg')}}" alt="photo" title="Photo" height="28" width="28"></div>
-			<div id="bouton-premium"><img src="{{asset('img/icon-premium.svg')}}" alt="premium" title="Premium" height="28" width="28"></div>
+			<div id="bouton-premium"><a href="{{ action('InicioController@index') }}"><img src="{{asset('img/icon-premium.svg')}}" alt="premium" title="Premium" height="28" width="28">
+			</div>
 		</div>
 	</div>
     </div>
@@ -104,7 +105,7 @@
             </div>
 
             <div id="main-premium-ressource">
-                <div class="premium-ressource"><a href="#">Premium resources</a></div>
+                <div class="premium-ressource"><a href="{{ action('InicioController@index') }}">Premium resources</a></div>
             </div>
 
             <div id="main-themes">
@@ -177,7 +178,7 @@
 		 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
 		 adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
- </div>
+</div>
  <!-- The Tour Section -->
  <!--- "{{asset('img/psd-1.jpg')}}"-->
    <div class="w3-blue" id="tour">
