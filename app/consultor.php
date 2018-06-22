@@ -9,5 +9,6 @@ class consultor extends Model
 {//meli
     protected $table='consultor';
     protected $primarykey='idConsultor';
-    public $timestamps = false;
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
 }
