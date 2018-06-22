@@ -70,7 +70,7 @@
 		</div>
 
 		<div id="wrapper-title-3">
-		<a href="#"><div class="oldies object">Publica un Proyecto</div></a>
+		<a href="{{action('RegistrarProyectoController@create')}}"><div class="oldies object">Publica un Proyecto</div></a>
 		</div>
 		</div>
 		<div id="wrapper-bouton-icon">

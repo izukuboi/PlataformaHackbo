@@ -7,6 +7,7 @@ use App\categoria;
 use App\emprendedor;
 use Session;
 use App\equipoemprendedor;
+use App\detalleequipoemprendedor;
 
 class RegistrarProyectoController extends Controller
 {
@@ -28,12 +29,32 @@ class RegistrarProyectoController extends Controller
      */
     public function create()
     {
-
-        $categoria = categoria::all();
+        $emprendor = new emprendedor;
+        $equipo = new detalleequipoemprendedor;
+        
+        if($emprendor->where('idEmprendedor',Session::get('InicioSesion',0))->exists())
+        {   
+            if($equipo->where('idEmprendedor',Session::get('InicioSesion',0))->exists())
+            {   
+                
+                $categoria = categoria::all();
+                //dd($categoria);
+                $equipoemprendedor = equipoemprendedor::all();
+                return view('PublicaProyecto/PublicaProyecto',compact('categoria','equipoemprendedor'));
+            }
+                else
+                    {
+                        return redirect()->action('InicioController@create');
+                    }
+        }
+        else {
+            return redirect()->action('InicioController@create');
+        }
+/*         $categoria = categoria::all();
         //dd($categoria);
         $equipoemprendedor = equipoemprendedor::all();
         return view('PublicaProyecto/PublicaProyecto',compact('categoria','equipoemprendedor'));
-        //
+        // */
     }
 
     /**
