@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class transaccion extends Model
 {
-    protected $table='aporte';
-    protected $primarykey='idAporte';
+    protected $table='transaccion';
+    protected $primarykey='idTrasaccion';
     use SoftDeletes;
     protected $dates = ['deleted_at'];
 }
