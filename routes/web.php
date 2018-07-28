@@ -23,13 +23,14 @@ Route::resource('proyecto', 'ProyectoController');
 
 Route::any('/usuario', 'UsuarioController@ActionIndex');
 
-//Route::resource('/usuario/c','UsuarioController');
+//Cambio para wayar;
 
 
 Route::resource('publicaproyecto', 'PublicaProyectoController');
 Route::resource('emprendedor','EmprendedorController');
 Route::resource('patrocinador','PatrocinadorController');
 Route::resource('consultor', 'ConsultorController');
+
 
 Route::resource('Login', 'LoginController');
 
