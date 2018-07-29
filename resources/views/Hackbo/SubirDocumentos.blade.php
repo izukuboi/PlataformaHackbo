@@ -135,14 +135,25 @@
     <div class="w3-content w3-section" style="max-width:100%">
     <table style="width:100%">
   <tr>
-    <th><img class="mySlides" src="{{asset('img/694.jpg')}}" style="width:100%"></th>
-    <th><form class="form-register" style="width:80%" >
+  <div class = "contenedor-inputs">
+    <h2>Documentos pendientes</h2>
+	<ul class = "contenedor-inputs">
+		<!-- Lista para Documentos pendientes!!! -->
+		@foreach($documentos as $doc)
+			<li value="{{$doc->IdDocumentoGeneral}}">{{$doc->NombreDocumentoGeneral}}</li>
+		@endforeach	
+		
+	</ul>
+	</div>
+    <th><form class="form-register" style="width:30%" >
               <div class= "contenedor-inputs">
+			  
 		
 
 		<p>Documentos:</p>
 		<select name= "requesitos" class = "combobox" required>
-			<option value="0" selected>Elegir..</option>
+			<option value="0" selected>Elegir..
+			</option>
 			
 
 		</select> 
