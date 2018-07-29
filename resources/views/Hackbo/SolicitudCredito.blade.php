@@ -65,7 +65,7 @@
             </div>
 
             
-            
+            </div>
             
     	</div>
     </div>
@@ -132,47 +132,26 @@
 	   <h2 class="w3-wide w3-xxxlarge"><b>Inicia el Proceso de solicitud de crédito</b></h2>
 	   
     </div>
+    <div class="w3-content w3-section" style="max-width:100%">
     
+  
     
-      
-    <form class="form-register" style="width:50%" >
-        <div class= "contenedor-inputs">
-		
-		<p>Relación:</p>
-		<select name= "tipocredito" class = "combobox" required>
-			<option value="0" selected>Elegir..</option>
-			@foreach($equipoemprendedor as $e)
-				<option value="{{$e->idTipoCredito}}">{{$e->nombreEquipo}}</option>
-			@endforeach
-
-		</select>
-	
+    <form class="form-register" style="width:80%" >
+              <div class= "contenedor-inputs">
 		<p>Nombre:</p>
 		<input type="text" class="field" name= "nombre"required>
 
 		<p>Apellido Paterno:</p>
 		<input type="text" class="field" name= "apellidop"required>
 
-		<p style="float:left;">Apellido Materno:</p>
-		<input type="text" class="field" name= "apellidom"required>
 
-		<p>Documento de Identidad:</p>
-		<input type="text" class="field" name= "ci"required>
+		<p>Apellido Materno:</p>
+		<input type="text" class="field" name= "apellidom"required>
 
 		<p>Teléfono:</p>
 		<input type="text" class="field" name= "telefono"required>
 
-		</div>
-		<p class="center-content">
-			<input type="submit" class="btn btn-green" name= "boton_iniciarproceso" value="Registrar">
-		</p> 
-    </form> 
-
-    <form class="form-register" style="width:50%" >
-        <div class= "contenedor-inputs">
-		
-		<h2><b>Tipo de Crédito:</b></h2>		
-		
+		<p>Tipo de Crédito:</p>
 		<select name= "tipocredito" class = "combobox" required>
 			<option value="0" selected>Elegir..</option>
 			@foreach($equipoemprendedor as $e)
@@ -180,52 +159,17 @@
 			@endforeach
 
 		</select>
-		</div>
+
+		
+
 		<p class="center-content">
-			<input type="submit" class="btn btn-green" name= "boton_iniciarproceso" value="Registrar">
+			<input type="submit" class="btn btn-green" name= "boton_iniciarproceso" value="Iniciar proceso">
 		</p>
-	</form>  
-
-	<form class="form-register" style="width:50%" >
-        <div class= "contenedor-inputs">
-
-		<h2><b>Condiciones del Crédito:</b></h2>				
-		
-		<p>Monto (Bolivianos):</p>
-		<input type="text" class="field" name= "monto"required >
-				
-		<p>Plazo (meses):</p>
-		<input type="text" class="field" name= "plazo"required >
-
-		<p>Fecha de Pago (cada):</p>
-		<input type="text" class="field" name= "fechapago"required >
-
-		<p>Amortizacion:</p>
-		<select name= "amortizacion" class = "combobox" required>
-			<option value="0" selected>Elegir..</option>
-			@foreach($equipoemprendedor as $e)
-				<option value="{{$e->idTipoCredito}}">{{$e->nombreEquipo}}</option>
-			@endforeach
-
-		</select>
-		
-		<p>Garantía:</p>
-		<select name= "garantia" class = "combobox" required>
-			<option value="0" selected>Elegir..</option>
-			@foreach($equipoemprendedor as $e)
-				<option value="{{$e->idTipoCredito}}">{{$e->nombreEquipo}}</option>
-			@endforeach
-
-		</select>
-		
-
-		</div>
-		<p class="center-content">
-			<input type="submit" class="btn btn-green" name= "boton_iniciarproceso" value="Registrar">
-		</p> 
-    </form>
-          
-  
+	</div>
+</form>
+    
+           
+    </div>
               
 <!-- Sobre Nosotros -->
   
