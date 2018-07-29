@@ -28,7 +28,7 @@
 
 <!-- HEADER -->
 <div class="w3-jumbo">
-		<a href="{{action('InicioController@create')}}"<b> Emprende Ayuda!</b> </a>
+		<a href="{{action('InicioController@create')}}"<b>Banca Fácil</b> </a>
 </div>
 <div id="wrapper-header">
 	<div id="main-header" class="object">
@@ -66,14 +66,7 @@
 
             
             </div>
-            <div id="wrapper-bouton-icon">
-            	<div id="bouton-ai"><img src="{{asset('img/icon-ai.svg')}}" alt="illustrator" title="Illustrator" height="28" width="28"></div>
-            	<div id="bouton-psd"><img src="{{asset('img/icon-psd.svg')}}" alt="photoshop" title="Photoshop" height="28" width="28"></div>
-            	<div id="bouton-theme"><img src="{{asset('img/icon-themes.svg')}}" alt="theme" title="Theme" height="28" width="28"></div>
-            	<div id="bouton-font"><img src="{{asset('img/icon-font.svg')}}" alt="font" title="Font" height="28" width="28"></div>
-            	<div id="bouton-photo"><img src="{{asset('img/icon-photo.svg')}}" alt="photo" title="Photo" height="28" width="28"></div>
-            	<div id="bouton-premium"><img src="{{asset('img/icon-premium.svg')}}" alt="premium" title="Premium" height="28" width="28"></div>
-			</div>
+            
     	</div>
     </div>
 
@@ -136,7 +129,7 @@
             <!--<h2 class="w3-center">Mejores Proyectos</h2>-->
 			<!--- "{{asset('img/psd-3.jpg')}}"-->
 	<div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
-	   <h2 class="w3-wide w3-xxxlarge"><b>Listo para mostrar tu proyecto al mundo?</b></h2>
+	   <h2 class="w3-wide w3-xxxlarge"><b>Inicia el Proceso de solicitud de crédito</b></h2>
 	   
     </div>
     <div class="w3-content w3-section" style="max-width:100%">
@@ -146,40 +139,30 @@
     <th><form class="form-register" style="width:80%" >
               <div class= "contenedor-inputs">
 		<p>Nombre:</p>
-		<input type="text" class="field" name= "nombre"required> 
+		<input type="text" class="field" name= "nombre"required>
 
-		<p>Descripción:</p>
-		<textarea name="descripcion" class="field" rows="5"></textarea>
+		<p>Apellido Paterno:</p>
+		<input type="text" class="field" name= "apellidop"required>
 
-		<p>Equipo:</p>
-		<select name= "equipoemprendedor" class = "combobox" required>
+		<p>Apellido Materno:</p>
+		<input type="text" class="field" name= "apellidom"required>
+
+		<p>Teléfono:</p>
+		<input type="text" class="field" name= "apellidom"required>
+
+		<p>Tipo de Crédito:</p>
+		<select name= "tipocredito" class = "combobox" required>
 			<option value="0" selected>Elegir..</option>
 			@foreach($equipoemprendedor as $e)
-				<option value="{{$e->idEquipoEmprendedor}}">{{$e->nombreEquipo}}</option>
+				<option value="{{$e->idTipoCredito}}">{{$e->nombreEquipo}}</option>
 			@endforeach
 
 		</select>
 
-		<p>Categoría:</p>
-		<select name= "categoria" class = "combobox" required>
-			<option value="0" selected>Elegir..</option>
-			@foreach($categoria as $c)
-				<option value="{{$c->idCategoria}}">{{$c->nombreCategoria}}</option>
-			@endforeach
-
-		</select>
-
-		<p>Monto meta:</p>
-        <input type="text" class="field" name= "password" required>
-        
-        <p>Fecha Inicio:</p>
-        <input type="date" class="field" name= "password" required>
-        
-        <p>Fecha Final:</p>
-		<input type="date" class="field" name= "password" required>
+		
 
 		<p class="center-content">
-			<input type="submit" class="btn btn-green" name= "boton_registrar" value="Registrar">
+			<input type="submit" class="btn btn-green" name= "boton_registrar" value="Iniciar proceso">
 		</p>
 	</div>
 </form></th>
