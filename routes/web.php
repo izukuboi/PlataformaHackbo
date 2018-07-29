@@ -18,6 +18,8 @@ Route::resource('registro','RegistroController');
 
 Route::resource('quienessomos', 'QuienesSomosController');
 
+Route::resource('subirdocumentos', 'SubirDocumentosController');
+
 Route::resource('registrarproyecto', 'RegistrarProyectoController');
 Route::resource('proyecto', 'ProyectoController');
 

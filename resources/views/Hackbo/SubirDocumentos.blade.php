@@ -32,9 +32,9 @@
 </div>
 <div id="wrapper-header">
 	<div id="main-header" class="object">
-	<div id="wrapper-title-3">
-            <a href="{{action('SubirDocumentosController@create')}}"><div class="recent object">Subir Documentos</div></a>
-            </div>
+        <div id="wrapper-title-2">
+            <a href="#"><div class="recent object">Sobre Nosotros</div></a>
+        </div>
         <div id="wrapper-title-2">
             <a href="#"><div class="recent object">Como Funcionamos</div></a>
         </div>
@@ -129,8 +129,8 @@
             <!--<h2 class="w3-center">Mejores Proyectos</h2>-->
 			<!--- "{{asset('img/psd-3.jpg')}}"-->
 	<div class="w3-container w3-content w3-center w3-padding" style="max-width:800px" id="band">
-	   <h2 class="w3-wide w3-xxxlarge"><b>Inicia el Proceso de solicitud de crédito</b></h2>
-	   
+	   <h2 class="w3-wide w3-xxxlarge"><b>Requisitos para solicitud del Crédito</b></h2>
+	    
     </div>
     <div class="w3-content w3-section" style="max-width:100%">
     <table style="width:100%">
@@ -138,31 +138,24 @@
     <th><img class="mySlides" src="{{asset('img/694.jpg')}}" style="width:100%"></th>
     <th><form class="form-register" style="width:80%" >
               <div class= "contenedor-inputs">
-		<p>Nombre:</p>
-		<input type="text" class="field" name= "nombre"required>
+		
 
-		<p>Apellido Paterno:</p>
-		<input type="text" class="field" name= "apellidop"required>
-
-		<p>Apellido Materno:</p>
-		<input type="text" class="field" name= "apellidom"required>
-
-		<p>Teléfono:</p>
-		<input type="text" class="field" name= "telefono"required>
-
-		<p>Tipo de Crédito:</p>
-		<select name= "tipocredito" class = "combobox" required>
+		<p>Documentos:</p>
+		<select name= "requesitos" class = "combobox" required>
 			<option value="0" selected>Elegir..</option>
-			@foreach($equipoemprendedor as $e)
-				<option value="{{$e->idTipoCredito}}">{{$e->nombreEquipo}}</option>
-			@endforeach
+			
 
-		</select>
+		</select> 
+
+        <div>
+        <label for="file">Escoger el documento a cargar</label>
+        <input type="file" id="file" name="file" multiple>
+        </div>
 
 		
 
 		<p class="center-content">
-			<input type="submit" class="btn btn-green" name= "boton_iniciarproceso" value="Iniciar proceso">
+			<input type="submit" class="btn btn-green" name= "boton_iniciarproceso" value="Cargar Requisito">
 		</p>
 	</div>
 </form></th>
