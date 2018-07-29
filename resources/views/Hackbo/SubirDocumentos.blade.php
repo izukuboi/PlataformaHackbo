@@ -30,22 +30,7 @@
 <div class="w3-jumbo">
 		<a href="{{action('InicioController@create')}}"<b>Banca Fácil</b> </a>
 </div>
-<div id="wrapper-header">
-	<div id="main-header" class="object">
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Sobre Nosotros</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Como Funcionamos</div></a>
-        </div>
-        <div id="wrapper-title-2">
-            <a href="#"><div class="recent object">Contactanos</div></a>
-        </div>
-		<!--<div class="logo"><img src="img/logo-burst.png" alt="logo platz" height="60" width="90"></div>-->
-	</div>
-        <div id="stripes"></div>
-    </div>
-</div>
+
 
 <!-- NAVBAR -->
 
@@ -135,14 +120,25 @@
     <div class="w3-content w3-section" style="max-width:100%">
     <table style="width:100%">
   <tr>
-    <th><img class="mySlides" src="{{asset('img/694.jpg')}}" style="width:100%"></th>
-    <th><form class="form-register" style="width:80%" >
+  <div class = "contenedor-inputs">
+    <h2>Documentos pendientes</h2>
+	<ul class = "contenedor-inputs">
+		<!-- Lista para Documentos pendientes!!! -->
+		@foreach($documentos as $doc)
+			<li value="{{$doc->IdDocumentoGeneral}}">{{$doc->NombreDocumentoGeneral}}</li>
+		@endforeach	
+		
+	</ul>
+	</div>
+    <th><form class="form-register" style="width:30%" >
               <div class= "contenedor-inputs">
+			  
 		
 
 		<p>Documentos:</p>
 		<select name= "requesitos" class = "combobox" required>
-			<option value="0" selected>Elegir..</option>
+			<option value="0" selected>Elegir..
+			</option>
 			
 
 		</select> 
@@ -163,7 +159,7 @@
   </tr>
 </table>          
     </div>
-              
+                
 <!-- Sobre Nosotros -->
   
 

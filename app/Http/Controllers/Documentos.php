@@ -3,13 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\categoria;
-use App\emprendedor;
-use App\equipoemprendedor;
-use App\detalleequipoemprendedor;
-use App\DocumentoGe;
+use App\DocumentoGenerales;
 
-class SubirDocumentosController extends Controller
+class Documentos extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -29,7 +25,7 @@ class SubirDocumentosController extends Controller
     public function create()
     {
         $documentos = DocumentoGe::all();
-        return view('Hackbo/SubirDocumentos',compact('documentos'));
+        return view('subirdocumentos/create',compact('documentos'));
     }
 
     /**
