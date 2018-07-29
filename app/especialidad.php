@@ -9,6 +9,6 @@ class especialidad extends Model
 {
 	protected $table='especialidad';
     protected $primarykey='idEspecialidad';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

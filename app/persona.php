@@ -11,7 +11,7 @@ class persona extends Model
 	protected $table='persona';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idPersona';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 
 }

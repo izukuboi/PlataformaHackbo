@@ -10,6 +10,6 @@ class patrocinador extends Model
 	protected $table='patrocinador';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idPatrocinador';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

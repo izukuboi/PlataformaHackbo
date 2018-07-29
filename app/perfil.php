@@ -11,6 +11,6 @@ class perfil extends Model
     protected $table='perfil';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idPerfil';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

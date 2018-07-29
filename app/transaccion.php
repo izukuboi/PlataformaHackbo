@@ -9,6 +9,6 @@ class transaccion extends Model
 {
     protected $table='transaccion';
     protected $primarykey='idTrasaccion';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

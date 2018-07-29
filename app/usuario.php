@@ -11,7 +11,7 @@ class usuario extends Model
 	protected $table='usuario';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idUsuario';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 
 }

@@ -11,7 +11,7 @@ class pais extends Model
 	protected $table='pais';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idPais';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 			
 }

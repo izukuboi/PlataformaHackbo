@@ -9,6 +9,6 @@ class detalleequipoemprendedor extends Model
 {
     protected $table='detalleequipoemprendedor';
     protected $primarykey='idDetalleEquipoEmprendedor';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

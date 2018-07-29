@@ -9,6 +9,6 @@ class aporte extends Model
 {
     protected $table='aporte';
     protected $primarykey='idAporte';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

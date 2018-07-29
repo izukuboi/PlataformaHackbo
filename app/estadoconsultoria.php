@@ -9,6 +9,6 @@ class estadoconsultoria extends Model
 {
     protected $table='estadoconsultoria';
     protected $primarykey='idEstadoConsultoria';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

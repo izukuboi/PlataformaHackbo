@@ -11,6 +11,6 @@ class Proyecto extends Model
     protected $table='proyecto';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idProyecto';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }

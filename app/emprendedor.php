@@ -10,6 +10,6 @@ class emprendedor extends Model
     protected $table='emprendedor';
 	//protected $dates = ['deleted_at'];
     protected $primarykey='idEmprendedor';
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
+    //use SoftDeletes;
+    //protected $dates = ['deleted_at'];
 }
